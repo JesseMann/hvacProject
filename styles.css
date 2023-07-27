@@ -9,6 +9,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .navbar {
@@ -142,7 +143,6 @@ body {
     align-items: center;
     width: 100%;
     margin-top: 25px;
-    margin-bottom: 25px;
     background: #e7e5d0;
 }
 
@@ -178,17 +178,31 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: 95vh;
+    background-color:#f5f3e7;
 }
 
 .SixthContainer2 {
     width: 50%;
-    background-color: #e7e5d0;
+    padding: 0px 50px 0px 50px;
 }
 
 .SixthContainer2 img {
     height: 50px;
+    padding-top: 30px;
 }
 
+.SixthContainer2 h2 {
+    padding-top: 15px;
+}
+
+.SixthContainer2 h1{
+    padding-bottom: 10px;
+}
+
+.SixthContainer2 p {
+    padding-bottom: 15px;
+}
 .MainForm {
     display: flex;
     flex-direction: column;
@@ -198,29 +212,101 @@ body {
     padding-bottom: 10px;
 }
 
-.MainForm input {
+.FormRow1 {
+    width: 100%;
     padding-top: 5px;
-    padding-bottom: 5px;
-    text-align: center;
+    padding-bottom: 30px;
+}
+
+.FormRow1 input {
+    padding: 15px;
     background-color: white;
     margin-left: 5px;
     margin-right: 5px;
-    width: 30%;
-}
-
-.FormRow1, .FormRow3 {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    width: 40%;
 }
 
 .FormRow2 {
-    width: 61%;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    width: 88.5%;
     background-color: white;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+.FormRow2 select {
+    padding: 15px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: grey;
+}
+
+.FormRow3 {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+.FormRow3 input {
+    padding: 15px;
+    background-color: white;
+    width: 40%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.FormRow3 select {
+    padding: 15px;
+    background-color: white;
+    width: 43%;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: grey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.FormRow4 {
+    width: 100%;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.FormRow4 textarea {
+    padding: 15px;
+    width: 84.5%;
+    background-color: white;
+    resize: none;
+}
+
+::placeholder {
+    color: grey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.FormRow5 {
+    width: 88%;
+    display: flex;
+    justify-content: end;
+    padding: 15px;
+}
+
+.FormRow5 button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #807c7b;
+    color: white;
+    padding: 25px;
+}
+
+.footerContainer ul {
+    list-style: none;
 }
