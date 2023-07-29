@@ -12,6 +12,8 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+    /** NavBar Component Star **/
+
 .navbar {
     position: fixed;
     width: 100%;
@@ -36,6 +38,23 @@ body {
     text-align: center;
 }
 
+.NavLinks li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.NavLinks li a:active {
+    color: #4CAF50;
+}
+    /** NavBar Component End **/
+
+    /** Home Page Start **/
+
+.MainContainer {
+    position: relative;
+}
+
 .BGimg {
     width: 100%;
     display: block;
@@ -44,7 +63,7 @@ body {
 .headlineText {
     position: absolute;
     display: flex;
-    top: 16%;
+    top: 27%;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -53,7 +72,7 @@ body {
 .headlineText2 {
     position: absolute;
     display: flex;
-    top: 20%;
+    top: 32%;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -61,7 +80,7 @@ body {
 
 .headlineButton {
     position: absolute;
-    top: 26%;
+    top: 40%;
     left: 45%;
     padding: 10px 20px;
     font-size: 18px;
@@ -172,37 +191,33 @@ body {
     width: 35%;
     }
 
-.SixthContainer {
+    /** Home Page End **/
+
+    /** Form Component Start **/
+
+.FormContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 95vh;
     background-color:#f5f3e7;
+    padding: 25px 0px 25px 0px;
 }
 
-.SixthContainer2 {
+.FormContainer2 {
     width: 50%;
-    padding: 0px 50px 0px 50px;
+    padding: 50px 0px 50px 0px;
 }
 
-.SixthContainer2 img {
-    height: 50px;
-    padding-top: 30px;
+.FormContainer h1{
+    padding-bottom: 20px;
 }
 
-.SixthContainer2 h2 {
-    padding-top: 15px;
+.FormContainer p{
+    padding-bottom: 30px;
 }
 
-.SixthContainer2 h1{
-    padding-bottom: 10px;
-}
-
-.SixthContainer2 p {
-    padding-bottom: 15px;
-}
 .MainForm {
     display: flex;
     flex-direction: column;
@@ -285,8 +300,8 @@ body {
 .FormRow5 {
     width: 88%;
     display: flex;
-    justify-content: end;
-    padding: 15px;
+    justify-content: center;
+    padding-top: 30px;
 }
 
 .FormRow5 button {
@@ -297,6 +312,10 @@ body {
     border: none;
     cursor: pointer;
 }
+
+    /** Form Component End **/
+
+    /** Footer Component Start **/
 
 .footerContainer {
     display: flex;
@@ -310,3 +329,116 @@ body {
 .footerContainer ul {
     list-style: none;
 }
+
+    /** Footer Component End **/
+
+    /** Alt-Page Hero Container Component Start **/
+
+.HeroContainer {
+    position: relative;
+    background-color: black;
+}
+
+.HeroContainerBlurb {
+    position: absolute;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+
+.HeroBGImage {
+    width: 100%;
+    display: block;
+    opacity: .5;
+    background-color: black;
+    filter: brightness(50%);
+}
+
+.HeroContainerBlurb-0 {
+    width: 60%;
+}
+
+.HeroContainerBlurb-0 h1{
+    font-size: 64px;
+    width: 72%;
+}
+
+.HeroContainerBlurb-1{
+    width: 60%;
+}
+
+.HeroContainerBlurb-1 p{
+    font-size: 22px;
+    width: 75%;
+    padding: 20px 20px 20px 0px;
+}
+
+.HeroContainerBlurb-2{
+    width: 60%;
+}
+
+
+.HeroHeadlineButton {
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+    /** Alt-Page Hero Container Component End**/
+
+
+    /** Alt-Page Description Container Component End**/
+.DescriptionContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background: #e7e5d0;
+}
+
+.DescriptionContainer img {
+    width: 60%;
+}
+
+.DescriptionContainerBlurb {
+    display: flex;
+    flex-direction: column;
+    padding:0px 50px 0px 50px;
+    background-color: #e7e5d0;
+}
+
+.DescriptionContainerBlurb h1 {
+    padding-bottom: 25px;
+}
+
+.DescriptionContainerBlurb ul {
+    padding: 5px 25px 25px 25px;
+}
+
+.DescriptionContainerBlurb ul li {
+    padding: 5px;
+}
+
+.DescriptionContainerBlurb p {
+    padding-bottom: 25px;
+}
+
+.DescriptionContainerBlurb button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 35%;
+}
+
+
+/** Alt-Page Description Container Component End**/

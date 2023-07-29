@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="navbar"> 
+        <ul class="NavLinks">
+            <li id="Heating" >
+              <a href="heating.html">Heating</a>
+            </li>
+            <li id="AC">
+                <a href="ac.html">AC</a>
+            </li>
+            <li id="Mini_Splits">
+                <a href="miniSplit.html">Mini Splits</a>
+            </li>
+            <li id="HVAC_Logo">
+                <a href="index.html"><img src="assets/img-fotor-bg-remover-20230722221927.png" height = 50px></a></li>
+            <li id="About">About Us</li>
+            <li id="Reviews">Reviews</li>
+            <li id="Request_Service">Request Service</li>
+        </ul>
+    </div>
+
+    <div class="HeroContainer">
+        <img src="assets/HeatinHead.jpeg" class="HeroBGImage">
+        <div class="HeroContainerBlurb">
+            <div class="HeroContainerBlurb-0">
+                <h1>About Us</h1>
+            </div>
+            <div class="HeroContainerBlurb-1">
+                <p> We are a family-owned and operated business that serves all of San Diego County and the surrounding areas. With over 20 years of experience in the industry, owner Gabriel Carini founded the company in 2006. Learn more about Carini Heating, Air and Plumbing’s business culture, values, and customer dedication.</p>
+            </div>
+            <div class="HeroContainerBlurb-2">
+                <button class="HeroHeadlineButton">Request Service</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="DescriptionContainer">
+        <img src="assets/stock hvac 1.webp">
+        <div class="DescriptionContainerBlurb">
+            <h1>
+                SPFD HVAC has you covered:
+            </h1>
+            <p>All our service technicians at Carini are factory-trained, certified, licensed, insured, knowledgeable, and friendly. Our technicians in each trade serve homeowners and businesses throughout the greater San Diego County area. Our HVAC teams are educated and certified in installing and repairing traditional central air heating and AC / air conditioning systems, heat pumps, ductless mini split configurations, and the latest advances in energy-efficient products and green technology. Our plumbing professionals are trained in all plumbing installation and repair areas, including tankless water heaters, drain cleaning, whole home water filtration, and all types of kitchen and bath appliance repair and installations. We specialize in air conditioning repair in San Diego and plumbing for vintage and historic homes, traditional home retrofits, custom homes, and light commercial applications.</p>
+            <button type="submit">Request Service</button>
+        </div>
+    </div>
+
+    <div class="FormContainer">
+        <div class="FormContainer2">
+          <h2>Heating & Air Conditioning</h2>
+          <h1>Request a Service or Estimate</h1>
+          <p>
+            To request information about our services,<br>
+            fill out the form below or give us a call at 444-444-444!
+          </p>
+          <form class="MainForm">
+            <div class="FormRow1">
+              <label for="Name"></label>
+              <input type="text" id="name" name="name" placeholder="Full Name" required>
+          
+              <label for="email"></label>
+              <input type="email" id="email" name="email" placeholder="Email Address" required>
+            </div>
+  
+            <div class="FormRow2">
+              <label for="type"></label>
+              <select id="type" name="type" required>
+                <option value="">Type of Service</option>
+                <option value="Heating">Central Heating</option>
+                <option value="AirCon">Air Conditioning</option>
+                <option value="MiniSplits">Mini Splits</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+  
+            <div class="FormRow3">
+              <label for="Number"></label>
+              <input type="text" id="Number" name="Number" placeholder="Phone Number" required>
+  
+              <label for="referral"></label>
+              <select id="type" name="type" required>
+                <option value="">How did you hear about us?</option>
+                <option value="Heating">Google/Search Engine</option>
+                <option value="AirCon">Social Media</option>
+                <option value="MiniSplits">Word of Mouth</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+        
+            <div class="FormRow4">
+              <label for="subject"></label>
+              <textarea id="subject" name="subject" placeholder="Describe your issue" rows="5" cols="5" required></textarea>
+            </div>
+  
+            <div class="FormRow5">
+              <button type="submit" value="Submit">Send Message</button>
+            </div>
+  
+          </form>
+        </div>
+      </div>
+      <footer class="footerContainer">
+        <div class="Service Areas">
+          <h2>
+            Service Areas
+          </h2>
+          <ul>
+            <li>Ozark</li>
+            <li>Springfield</li>
+            <li>Nixa</li>
+            <li>Battlefield</li>
+            <li>Republic</li>
+          </ul>
+        </div>
+        <div class="SiteMap">
+          <h2>
+            Site Map
+          </h2>
+          <ul>
+            <li>Heating</li>
+            <li>AC</li>
+            <li>Mini Splits</li>
+            <li>About Us</li>
+            <li>Reviews</li>
+            <li>Request Service</li>
+          </ul>
+        </div>
+        <div class="ContactUs">
+          <h2>
+            Get in Touch
+          </h2>
+          <p>
+            444-444-444
+          </p>
+          <p>
+            Business Hours:<br>
+            Mon-Fri: 6pm-10pm <br>
+            Sat-Sun: 7am-10pm
+          </p>
+        </div>
+      </footer>
+      
+  </body>
+</html>
