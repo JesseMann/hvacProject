@@ -393,8 +393,71 @@ body {
 
     /** Alt-Page Hero Container Component End**/
 
+    /** Alt-Page Hero Container Component 2 Start **/
+
+    .HeroContainer2 {
+        position: relative;
+        background-color: black;
+    }
+    
+    .HeroContainerBlurb2 {
+        position: absolute;
+        top: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        width: 100%;
+    }
+    
+    .Hero2BGImage {
+        width: 100%;
+        height: 80%;
+        display: block;
+        opacity: .5;
+        background-color: black;
+        filter: brightness(50%);
+    }
+    
+    .HeroContainerBlurb2-0 {
+        width: 60%;
+    }
+    
+    .HeroContainerBlurb2-0 h1{
+        font-size: 64px;
+        width: 72%;
+    }
+    
+    .HeroContainerBlurb2-1{
+        width: 60%;
+    }
+    
+    .HeroContainerBlurb2-1 p{
+        font-size: 22px;
+        width: 75%;
+        padding: 20px 20px 20px 0px;
+    }
+    
+    .HeroContainerBlurb2-2{
+        padding: 25px;
+        width: 60%;
+    }
+    
+    
+    .HeroHeadlineButton {
+        position: absolute;
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    /** Alt-Page Hero Container Component 2 End **/
 
     /** Alt-Page Description Container Component End**/
+
 .DescriptionContainer {
     display: flex;
     flex-direction: row;
@@ -441,4 +504,65 @@ body {
 }
 
 
-/** Alt-Page Description Container Component End**/
+    /** Alt-Page Description Container Component End**/
+
+    /** Main Content Container Component Starts **/
+
+    .MainContentContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color:#f5f3e7;
+        padding: 25px 0px 25px 0px;
+    }
+    
+    .MainContentContainer-1 {
+        width: 35%;
+        padding: 25px 0px 25px 0px;
+    }
+    
+    .MainContentContainer h2{
+        padding-bottom: 20px;
+        text-align: left;
+    }
+    
+    .MainContentContainer p{
+        width: 100%;
+        text-align: left;
+        border-left: 10px;
+        border-style: inset;
+        padding-left: 15px;
+        border-width: 0px 0px 0px medium;
+        border-color: black;
+    }
+
+    /** Main Content Container Component Ends **/
+
+    /** About Page Starts **/
+
+    .MyStory {
+        padding-top: 60px;
+    }
+    
+    /** About Page Ends **/
+
+    /** Review Page Starts **/
+
+    .checked {
+        color: orange;
+      }
+
+    .ReviewText {
+        padding-top: 10px;
+    }
+
+    .firstStar {
+        padding-left: 10px;
+    }
+
+    .NewReview {
+        padding-top: 35px;
+    }
+    /** Review Page Ends **/
