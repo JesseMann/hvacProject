@@ -12,6 +12,19 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+body h1{
+    font-size: 2.5rem;
+}
+
+
+body h2{
+    font-size: 2rem;
+}
+
+body p, body li, button{
+    font-size: 1rem;
+}
+
     /** NavBar Component Star **/
 
 .navbar {
@@ -62,28 +75,24 @@ body {
 
 .headlineText {
     position: absolute;
-    display: flex;
     top: 27%;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .headlineText2 {
     position: absolute;
-    display: flex;
-    top: 32%;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .headlineButton {
     position: absolute;
-    top: 40%;
-    left: 45%;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 10px 20px;
-    font-size: 18px;
     background-color: #4CAF50;
     color: #fff;
     border: none;
@@ -106,7 +115,7 @@ body {
 
 .van {
     position: absolute;
-    top: -82%;
+    top: -88%;
     left: 50%;
     transform: translate(-50%, -50%)
 }
@@ -121,11 +130,10 @@ body {
     flex-direction: row;
     padding-left: 25px;
     padding-right: 25px;
-    margin-left: 394px;
-    margin-right: 394px;
+    margin-left: 20%;
+    margin-right: 20%;
     justify-content: center;
     align-items: center;
-    height: 50vh;
 }
 
 .maColumn1, .maColumn2 {
@@ -137,7 +145,9 @@ body {
 .maColumn1 {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
+
 .ForthContainer {
     display: flex;
     flex-direction: row;
@@ -172,8 +182,8 @@ body {
 .FifthContainerBlurb {
     display: flex;
     flex-direction: column;
-    padding-left: 25px;
-    padding-right: 350px;
+    padding-left: 40px;
+    padding-right: 250px;
     background-color: #e7e5d0;
 }
 
@@ -181,14 +191,18 @@ body {
     padding-bottom: 25px;
 }
 
+.FifthBlurbButtonContainer {
+    width: 100%;
+}
+
 .FifthContainerBlurb button {
     padding: 10px 20px;
-    font-size: 18px;
     background-color: #4CAF50;
     color: #fff;
     border: none;
     cursor: pointer;
-    width: 35%;
+    width: 55%;
+    text-wrap: nowrap;
     }
 
     /** Home Page End **/
@@ -206,7 +220,7 @@ body {
 }
 
 .FormContainer2 {
-    width: 50%;
+    width: 90%;
     padding: 50px 0px 50px 0px;
 }
 
@@ -223,11 +237,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    padding-bottom: 10px;
+    padding: 0px 12% 10px 12%;
 }
 
 .FormRow1 {
+    display: flex;
     width: 100%;
     padding-top: 5px;
     padding-bottom: 30px;
@@ -236,13 +250,19 @@ body {
 .FormRow1 input {
     padding: 15px;
     background-color: white;
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 40%;
+    width: 49%;
+}
+
+#name, #Number {
+    margin-right: .5%;
+}
+
+#email, #type {
+    margin-left: .5%;
 }
 
 .FormRow2 {
-    width: 88.5%;
+    width: 100%;
     background-color: white;
     margin-top: 5px;
     margin-bottom: 30px;
@@ -256,6 +276,7 @@ body {
 }
 
 .FormRow3 {
+    display: flex;
     width: 100%;
     padding-top: 5px;
     padding-bottom: 30px;
@@ -264,17 +285,13 @@ body {
 .FormRow3 input {
     padding: 15px;
     background-color: white;
-    width: 40%;
-    margin-left: 5px;
-    margin-right: 5px;
+    width: 48%;
 }
 
 .FormRow3 select {
     padding: 15px;
     background-color: white;
-    width: 43%;
-    margin-left: 5px;
-    margin-right: 5px;
+    width: 50%;
     color: grey;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -283,12 +300,12 @@ body {
     width: 100%;
     padding-bottom: 15px;
     padding-top: 5px;
+    background-color: white;
 }
 
 .FormRow4 textarea {
-    padding: 15px;
-    width: 84.5%;
-    background-color: white;
+    padding: 15px 0px 0px 1%;
+    width: 99%;
     resize: none;
 }
 
@@ -306,7 +323,6 @@ body {
 
 .FormRow5 button {
     padding: 10px 20px;
-    font-size: 18px;
     background-color: #4CAF50;
     color: #fff;
     border: none;
@@ -328,6 +344,21 @@ body {
 
 .footerContainer ul {
     list-style: none;
+}
+
+.SiteMap ul li a, .ContactUs p a {
+    text-decoration: none;
+    color: white;
+}
+
+.SiteMap ul li a:link {
+    color: white;
+}
+
+.ServiceAreas ul, .SiteMap ul, .ContactUs p {
+    padding-left: 5px;
+    padding-top: 5px;
+
 }
 
     /** Footer Component End **/
@@ -362,7 +393,6 @@ body {
 }
 
 .HeroContainerBlurb-0 h1{
-    font-size: 64px;
     width: 72%;
 }
 
@@ -371,7 +401,6 @@ body {
 }
 
 .HeroContainerBlurb-1 p{
-    font-size: 22px;
     width: 75%;
     padding: 20px 20px 20px 0px;
 }
@@ -384,7 +413,6 @@ body {
 .HeroHeadlineButton {
     position: absolute;
     padding: 10px 20px;
-    font-size: 18px;
     background-color: #4CAF50;
     color: #fff;
     border: none;
@@ -424,7 +452,6 @@ body {
     }
     
     .HeroContainerBlurb2-0 h1{
-        font-size: 64px;
         width: 72%;
     }
     
@@ -433,7 +460,6 @@ body {
     }
     
     .HeroContainerBlurb2-1 p{
-        font-size: 22px;
         width: 75%;
         padding: 20px 20px 20px 0px;
     }
@@ -447,7 +473,6 @@ body {
     .HeroHeadlineButton {
         position: absolute;
         padding: 10px 20px;
-        font-size: 18px;
         background-color: #4CAF50;
         color: #fff;
         border: none;
@@ -495,7 +520,6 @@ body {
 
 .DescriptionContainerBlurb button {
     padding: 10px 20px;
-    font-size: 18px;
     background-color: #4CAF50;
     color: #fff;
     border: none;
@@ -566,3 +590,51 @@ body {
         padding-top: 35px;
     }
     /** Review Page Ends **/
+
+    /** Media Queries Begin **/
+    @media (max-width: 1199.98px) {
+
+        /** Home Page Starts **/
+        .headlineText2 {
+            top: 35%;
+        }
+
+        .headlineButton {
+            top: 47%;
+        }
+
+
+        .ThirdContainer {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .FifthContainerBlurb {
+            display: flex;
+            flex-direction: column;
+            padding-right: 150px;
+        }
+
+        .FifthContainerBlurb button {
+            width: 65%;
+        }
+        /** Home Page Ends **/
+
+    }
+
+    @media (max-width: 991.98px) {
+        
+    }
+
+    @media (min-width: 767.98px) { 
+
+    }
+
+
+
+    @media (min-width: 575.98px) { 
+
+     }
+    
+
+    /** Media Queries Ends **/

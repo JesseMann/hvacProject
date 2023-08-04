@@ -52,10 +52,8 @@
     </div>
 
     <div class="ThirdContainer">
-      <div class="maColumn1"> 
-        <h1>SERVING SPRINGFIELD SINCE 2021
-        </h1>
-        <h2>HVAC Company located in Spfd, Mo</h2>
+      <div class="maColumn1">
+        <h2>HVAC Company located in Springfield Missouri</h2>
       </div>
       <div class="maColumn2"> 
         <p>Springfield HVAC is proud to be a family-owned and operated business in Springfield, MO, since 2022. Wes is a certified, experienced HVAC contractor and is proud to serve his local community. <br>
@@ -68,25 +66,27 @@
       <div class="iconContainer">
         <img src="assets/imgicon1.png"> 
         <div class="imgName">Central Heating</div>
-        <div class="imgLink">centralheatinglink.com</div>
+        <div class="imgLink"><a href="heating.html">jessemann.github.io/heating</a></div>
       </div>
       <div class="iconContainer">
         <img src="assets/imgicon3.png">
         <div class="imgName"> Air Conditioning</div>
-        <div class="imgLink">airconditioninglink.com</div>
+        <div class="imgLink"><a href="ac.html">jessemann.github.io/ac</a></div>
       </div>
       <div class="iconContainer">
         <img src="assets/imgicon2.png">
         <div class="imgName">Mini Splits</div>
-        <div class="imgLink">minisplitslink.com</div>
+        <div class="imgLink"><a href="miniSplit.html">jessemann.github.io/minisplits</a></div>
       </div>
     </div>
 
     <div class="FifthContainer">
       <img src="assets/stock hvac 1.webp">
       <div class="FifthContainerBlurb">
-        <p>Springfield HVAC is proud to be a family-owned and operated business in Springfield, MO, since 2022. Wes is a certified, experienced HVAC contractor and is proud to serve his local community. </p>
-        <button type="submit">Central Heating</button>
+        <p>Springfield HVAC is proud to be a family-owned and operated business in Springfield, MO, since 2022. Wesley (aka Wes) is a certified, experienced HVAC contractor and is proud to serve his local community. </p>
+        <div class="FifthBlurbButtonContainer">
+          <button type="submit">Central Heating</button>
+        </div>
       </div>
     </div>
 
@@ -108,14 +108,16 @@
           </div>
 
           <div class="FormRow2">
-            <label for="type"></label>
-            <select id="type" name="type" required>
-              <option value="">Type of Service</option>
-              <option value="Heating">Central Heating</option>
-              <option value="AirCon">Air Conditioning</option>
-              <option value="MiniSplits">Mini Splits</option>
-              <option value="Other">Other</option>
-            </select>
+            <div class="FormRow2Select">
+              <label for="type"></label>
+              <select id="select" name="type" required>
+                <option value="">Type of Service</option>
+                <option value="Heating">Central Heating</option>
+                <option value="AirCon">Air Conditioning</option>
+                <option value="MiniSplits">Mini Splits</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
           </div>
 
           <div class="FormRow3">
@@ -145,7 +147,7 @@
       </div>
     </div>
     <footer class="footerContainer">
-      <div class="Service Areas">
+      <div class="ServiceAreas">
         <h2>
           Service Areas
         </h2>
@@ -162,12 +164,24 @@
           Site Map
         </h2>
         <ul>
-          <li>Heating</li>
-          <li>AC</li>
-          <li>Mini Splits</li>
-          <li>About Us</li>
-          <li>Reviews</li>
-          <li>Request Service</li>
+          <li>
+            <a href="heating.html">Heating</a>
+          </li>
+          <li>
+            <a href="ac.html">AC</a>
+          </li>
+          <li>
+            <a href="miniSplit.html">Mini Splits</a>
+          </li>
+          <li>
+            <a href="aboutUs.html">About Us</a>
+          </li>
+          <li>
+            <a href="Reviews.html">Reviews</a>
+          </li>
+          <li>
+            <a href="RequestService.html">Request Service</a>
+          </li>
         </ul>
       </div>
       <div class="ContactUs">
@@ -175,7 +189,7 @@
           Get in Touch
         </h2>
         <p>
-          444-444-444
+          <a href="tel:444-444-444"> 444-444-444 </a>
         </p>
         <p>
           Business Hours:<br>
