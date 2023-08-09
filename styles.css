@@ -82,7 +82,7 @@ body p, body li, button{
 
 .headlineText2 {
     position: absolute;
-    top: 34%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -481,37 +481,58 @@ body p, body li, button{
 
     /** Alt-Page Hero Container Component 2 End **/
 
-    /** Alt-Page Description Container Component End**/
+    /** Alt-Page Description Container Component Start**/
+
+
 
 .DescriptionContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     width: 100%;
     background: #e7e5d0;
 }
 
-.DescriptionContainer img {
-    width: 60%;
-}
-
-.DescriptionContainerBlurb {
-    display: flex;
-    flex-direction: column;
-    padding:0px 50px 0px 50px;
-    background-color: #e7e5d0;
-}
-
-.DescriptionContainerBlurb h1 {
+.DescriptionContainerMainContent {
+    grid-column: 1;
+    transform: translate(15%, 0%);
+    width: 81%;
     padding-bottom: 25px;
 }
 
+.ImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+}
+
+.DescriptionContainer img {
+    width: 100%;
+}
+
+.DescriptionContainerBlurb {
+    display: grid;
+    background-color: #e7e5d0;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 2fr 2fr;
+}
+
+.DescriptionContainerBlurb h2 {
+    grid-column: 1;
+    transform: translate(15%, 0%);
+    width: 81%;
+    padding-top: 25px;
+}
+
 .DescriptionContainerBlurb ul {
-    padding: 5px 25px 25px 25px;
+    padding-bottom: 25px;
 }
 
 .DescriptionContainerBlurb ul li {
     padding: 5px;
+}
+
+.firstParagraph {
+    padding-top: 50px;
 }
 
 .DescriptionContainerBlurb p {
@@ -594,10 +615,22 @@ body p, body li, button{
     /** Media Queries Begin **/
     @media (max-width: 1199.98px) {
 
-        /** Home Page Starts **/
-        .headlineText2 {
-            top: 35%;
+        /** Body Starts **/
+        body h1{
+            font-size: 2rem;
         }
+        
+        
+        body h2{
+            font-size: 1.8rem;
+        }
+        
+        body p, body li, button{
+            font-size: 1rem;
+        }
+        /** Body Ends **/
+
+        /** Home Page Starts **/
 
         .headlineButton {
             top: 47%;
@@ -619,6 +652,12 @@ body p, body li, button{
             width: 65%;
         }
         /** Home Page Ends **/
+
+        /** Form Component Starts **/
+        .MainForm {
+            padding: initial;
+        }
+        /** Form Component Ends **/
 
     }
 
