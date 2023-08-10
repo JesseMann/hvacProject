@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
 }
 
 body h1{
@@ -21,11 +22,11 @@ body h2{
     font-size: 2rem;
 }
 
-body p, body li, button{
+body p, body li, button, a{
     font-size: 1rem;
 }
 
-    /** NavBar Component Star **/
+    /** NavBar Component Start **/
 
 .navbar {
     position: fixed;
@@ -85,6 +86,7 @@ body p, body li, button{
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
+    white-space: nowrap;
 }
 
 .headlineButton {
@@ -304,7 +306,7 @@ body p, body li, button{
 }
 
 .FormRow4 textarea {
-    padding: 15px 0px 0px 1%;
+    padding: 5px 0px 0px 2%;
     width: 99%;
     resize: none;
 }
@@ -453,6 +455,7 @@ body p, body li, button{
     
     .HeroContainerBlurb2-0 h1{
         width: 72%;
+        white-space: nowrap;
     }
     
     .HeroContainerBlurb2-1{
@@ -485,68 +488,69 @@ body p, body li, button{
 
 
 
-.DescriptionContainer {
-    width: 100%;
-    background: #e7e5d0;
-}
+    .DescriptionContainer {
+        width: 100%;
+        background: #e7e5d0;
+    }
 
-.DescriptionContainerMainContent {
-    grid-column: 1;
-    transform: translate(15%, 0%);
-    width: 81%;
-    padding-bottom: 25px;
-}
+    .DescriptionContainerMainContent {
+        grid-column: 1;
+        transform: translate(15%, 0%);
+        width: 81%;
+        padding-bottom: 25px;
+    }
 
-.ImageContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 2;
-}
+    .ImageContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 2;
+    }
 
-.DescriptionContainer img {
-    width: 100%;
-}
+    .DescriptionContainer img {
+        width: 100%;
+    }
 
-.DescriptionContainerBlurb {
-    display: grid;
-    background-color: #e7e5d0;
-    grid-template-rows: 50px 1fr;
-    grid-template-columns: 2fr 2fr;
-}
+    .DescriptionContainerBlurb {
+        display: grid;
+        background-color: #e7e5d0;
+        grid-template-rows: 50px 1fr;
+        grid-template-columns: 2fr 2fr;
+        grid-row-gap: 25px;
+    }
 
-.DescriptionContainerBlurb h2 {
-    grid-column: 1;
-    transform: translate(15%, 0%);
-    width: 81%;
-    padding-top: 25px;
-}
+    .DescriptionContainerBlurb h2 {
+        grid-column: 1;
+        transform: translate(15%, 0%);
+        width: 81%;
+        padding-top: 25px;
+    }
 
-.DescriptionContainerBlurb ul {
-    padding-bottom: 25px;
-}
+    .DescriptionContainerBlurb ul {
+        padding: 0px 0px 25px 15px;
+    }
 
-.DescriptionContainerBlurb ul li {
-    padding: 5px;
-}
+    .DescriptionContainerBlurb ul li {
+        padding: 5px 0px 5px 0px;
+    }
 
-.firstParagraph {
-    padding-top: 50px;
-}
+    .firstParagraph {
+        padding-top: 25px;
+    }
 
-.DescriptionContainerBlurb p {
-    padding-bottom: 25px;
-}
+    .DescriptionContainerBlurb p {
+        padding-bottom: 25px;
+    }
 
-.DescriptionContainerBlurb button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    width: 35%;
-}
+    .DescriptionContainerBlurb button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        width: 35%;
+    }
 
 
     /** Alt-Page Description Container Component End**/
@@ -613,20 +617,19 @@ body p, body li, button{
     /** Review Page Ends **/
 
     /** Media Queries Begin **/
-    @media (max-width: 1199.98px) {
+    @media screen and (max-width: 1199.98px) {
 
         /** Body Starts **/
         body h1{
             font-size: 2rem;
         }
         
-        
         body h2{
             font-size: 1.8rem;
         }
         
-        body p, body li, button{
-            font-size: 1rem;
+        body p, body li, button, a{
+            font-size: .8rem;
         }
         /** Body Ends **/
 
@@ -635,7 +638,6 @@ body p, body li, button{
         .headlineButton {
             top: 47%;
         }
-
 
         .ThirdContainer {
             margin-left: auto;
@@ -661,18 +663,265 @@ body p, body li, button{
 
     }
 
-    @media (max-width: 991.98px) {
+    @media screen and (max-width: 991.98px) {
+
+        /** Body Starts **/
+        body h1{
+            font-size: 1.9rem;
+        }
         
+        
+        body h2{
+            font-size: 1.7rem;
+        }
+        
+        body p, body li, button, a{
+            font-size: .7rem;
+        }
+        /** Body Ends **/
+
+        /** Home Page Starts **/
+
+        .headlineText2 {
+            top: 38%;
+        }
+
+        .headlineButton {
+            top: 52%;
+        }
+
+        .FifthContainerBlurb {
+            padding: 0px 20px 0px 20px;
+        }
+
+        /** Home Page Ends **/
+
+        /** Alt-Page Description Container Component Start**/
+
+        .ImageContainer {
+            grid-row: inherit;
+            align-items: baseline;
+        }
+
+        .DescriptionContainerBlurb h2 {
+            width: 100%;
+            padding: 0px;
+            transform: translate(60%, 25%);
+        }
+
+        .firstParagraph {
+            padding: 0px;
+        }
+
+        .DescriptionContainerMainContent {
+            padding-bottom: 10px;
+        }
+
+        .DescriptionContainerBlurb button {
+            width: 45%;
+        }
+
+        .DescriptionContainerBlurb ul {
+            padding: 0px 0px 25px 10px;
+        }
+        /** Alt-Page Description Container Component End**/
+
+        /** About Page Begins **/
+        .MainContentContainer-1 {
+            width: 50%;
+        }
+        /** About Page Ends **/
     }
 
-    @media (min-width: 767.98px) { 
+    @media screen and (max-width: 767.98px) { 
 
-    }
+        /** NavBar Component Start **/
+
+        .navbar {
+            position: static;
+            width: 100%;
+            background-color: rgba(232,229,208,255);
+        }
+
+        .NavLinks {
+            margin: 0px;
+        }
+
+        /** NavBar Component End **/
+
+        /** Home Page Starts **/
+
+        .headlineText {
+            top: 15%;
+        }
+        .headlineText2 {
+            top: 30%;
+        }
+
+        .headlineButton {
+            top: 50%;
+        }
+
+        .ForthContainer {
+            display: none;
+        }
+
+        .FifthContainerBlurb {
+            padding: 0px 20px 0px 20px;
+        }
+
+        /** Home Page Ends **/
+
+        /** Alt-Page Description Container Component Start**/
+
+        .ImageContainer {
+            display: none;
+        }
+
+        .DescriptionContainer {
+            padding-top: 50px;
+        }
+
+        .DescriptionContainerBlurb {
+            grid-template-columns: none;
+            grid-template-rows: none;
+        }
+
+        .DescriptionContainerBlurb p, .DescriptionContainerBlurb ul {
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        .DescriptionContainerBlurb h2 {
+            transform: none;
+            width: 100%;
+            white-space: nowrap;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .DescriptionContainerMainContent {
+            transform: none;
+            width: 100%;
+            padding-bottom: 50px;
+        }
+
+        .DescriptionContainerBlurb button {
+            width: 22%;
+            transform: translate(68%, 0%);
+        }
+        /** Alt-Page Description Container Component End**/
+
+
+        /** Alt-Page Hero Container Component Start **/
+        
+        .HeroContainerBlurb {
+            top: 12%;
+        }
+
+        .HeroContainerBlurb-0, .HeroContainerBlurb-1, .HeroContainerBlurb-2{
+            width: 80%;
+        }
+
+        /** Alt-Page Hero Container Component Start **/
+
+        /** Alt-Page Hero Container Component 2 Start **/
+
+        .HeroContainerBlurb2 {
+            top: 25%;
+        }
+
+        .HeroContainerBlurb2-0, .HeroContainerBlurb2-2 {
+            width: 80%;
+        }
+        
+        /** Alt-Page Hero Container Component 2 End **/
+
+
+        /** Form Component Starts **/
+        .FormContainer2 {
+            padding: 25px 0px 25px 0px;
+        }
+        /** Form Component Ends **/
 
 
 
-    @media (min-width: 575.98px) { 
+        /** Footer Component Start **/
+        .ServiceAreas h2, .SiteMap h2, .ContactUs h2 {
+            font-size: 1.5rem;
+        }
+        /** Footer Component End **/
+        }
 
+
+    @media screen and (max-width: 575.98px) { 
+
+        /** Body Starts **/
+        body h1{
+            font-size: 1.5rem;
+        }
+        
+        
+        body h2{
+            font-size: 1.2rem;
+        }
+        
+        body p, body li, button, a{
+            font-size: .6rem;
+        }
+        /** Body Ends **/
+
+        /** Home Starts **/
+        .FifthContainerBlurb {
+            padding:10px 10px 10px 10px;
+        }
+
+        .FifthContainerBlurb button {
+            width: 80%;
+        }
+
+        .FifthContainer img {
+            display: ;
+            align-items: baseline;
+        }
+        /** Home Ends **/
+
+        /** About Page Start **/
+        
+        .MainContentContainer-1 {
+            width: 75%;
+        }
+
+        /** About Page End **/
+
+        /** Alt-Page Hero Container Component Start **/
+
+        .HeroContainerBlurb {
+            top: 15%;
+        }
+
+
+        .HeroContainerBlurb-0 h1, .HeroContainerBlurb-1 p {
+            width: 100%;
+        }
+
+        .HeroContainerBlurb-1 p {
+            padding: 10px 0px 0px 0px;
+        }
+
+        .HeroHeadlineButton {
+            display: none;
+        }
+
+        /** Alt-Page Hero Container Component End **/
+
+
+
+        /** Footer Starts **/
+        .ServiceAreas h2, .SiteMap h2, .ContactUs h2 {
+            font-size: 1rem;
+        }
+        /** Footer Ends **/
      }
     
 
