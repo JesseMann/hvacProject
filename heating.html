@@ -35,7 +35,7 @@
     </div>
 
     <div class="HeroContainer">
-        <img src="assets/HeatinHead.jpeg" class="HeroBGImage">
+      <div class="HeroBGImageHeating"> </div>
         <div class="HeroContainerBlurb">
             <div class="HeroContainerBlurb-0">
                 <h1>Expert Central Air Heating Services</h1>
@@ -44,7 +44,7 @@
                 <p> Our certified technicians stay up-to-date on the latest technological advances in heating technology. Not only are we offering energy-efficient solutions for a greener Earth, but we take great pride in standing behind our work and the products we offer.</p>
             </div>
             <div class="HeroContainerBlurb-2">
-                <button class="HeroHeadlineButton">Request Service</button>
+              <a href="/RequestService.html"><button class="HeroHeadlineButton">Request Service</button></a>
             </div>
         </div>
     </div>
@@ -66,10 +66,10 @@
                   <li>Ductwork Repair, Replacement & Air Quality</li>
                   <li>Troubleshooting, Furnace Cleaning and Safety Inspections</li>
               </uL>
-              <button type="submit">Request Service</button>
+              <a href="/RequestService.html"><button type="submit">Request Service</button></a>
             </div>
             <div class="ImageContainer">
-              <img src="assets/stock hvac 1.webp">
+              <img src="assets/FurnanceImage.jpeg">
             </div>
         </div>
     </div>
@@ -82,7 +82,7 @@
           To request information about our services,<br>
           fill out the form below or give us a call at 444-444-444!
         </p>
-        <form class="MainForm">
+        <form class="MainForm" method="POST" action="/ThankYou.html" target="_blank">
           <div class="FormRow1">
             <label for="Name"></label>
             <input type="text" id="name" name="name" placeholder="Full Name" required>
@@ -124,7 +124,7 @@
           </div>
 
           <div class="FormRow5">
-            <button type="submit" value="Submit">Send Message</button>
+            <input type="submit" value="Send Message">
           </div>
 
         </form>

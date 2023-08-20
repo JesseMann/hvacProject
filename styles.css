@@ -5,7 +5,7 @@
     outline: 0;
     background: transparent;
 }
-html, body {
+html, body {  
     overflow-x: hidden;
   }
   
@@ -24,405 +24,500 @@ body h2{
     font-size: 2rem;
 }
 
-body p, body li, button, a{
+body p, body li, button, a, input{
     font-size: 1rem;
 }
 
     /** NavBar Component Start **/
 
-.navbar {
-    position: fixed;
-    width: 100%;
-    background-color: rgba(232,229,208,255);
-    z-index: 1;
-}
+    .navbar {
+        position: fixed;
+        width: 100%;
+        background-color: rgba(232,229,208,255);
+        z-index: 2;
+    }
 
-.NavLinks {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-decoration: none;
-    list-style-type: none;
-    align-items: center;
-    margin-left: 15%;
-    margin-right: 15%;
-}
+    .NavLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-decoration: none;
+        list-style-type: none;
+        align-items: center;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
 
-.NavLinks li {
-    padding: 10px;
-    width: 25%;
-    text-align: center;
-}
+    .NavLinks li {
+        padding: 10px;
+        width: 25%;
+        text-align: center;
+    }
 
-.NavLinks li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
+    .NavLinks li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
 
-.NavLinks li a:active {
-    color: #4CAF50;
-}
+    .NavLinks li a:hover {
+        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .NavLinks li a:active {
+        color: #807c7b;
+        text-shadow: none;
+    }
     /** NavBar Component End **/
 
     /** Home Page Start **/
 
-.MainContainer {
-    position: relative;
-}
+    .MainContainer {
+        position: relative;
+    }
 
-.BGimg {
-    width: 100%;
-    display: block;
-}
+    .BGimg {
+        height: 70vh;
+        display: block;
+        background-image: url(assets/1.jpeg);
+        background-size: cover;
+        background-color: black;
+        background-position: center bottom;
+    }
 
-.headlineText {
-    position: absolute;
-    top: 27%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-}
+    .headlineText {
+        position: absolute;
+        top: 27%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+    }
 
-.headlineText2 {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-}
+    .headlineText2 {
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+    }
 
-.headlineButton {
-    position: absolute;
-    top: 44%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
+    .headlineButton {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        z-index: 1;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    }
 
-.SecondContainer {
-    position: relative;
-}
+    .headlineButton:hover {
+        background-color: #347536;
+        color: white;
+    }
 
-.CarStrip {
-    position: relative;
-    width: 100%;
-}
+    .headlineButton:active {
+        box-shadow: none;
+    }
 
-.CarStrip img {
-    width: 100%;
-    display: block;
-}
+    .SecondContainer {
+        position: relative;
+    }
 
-.van {
-    position: absolute;
-    top: -88%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-}
+    .CarStrip {
+        position: relative;
+        width: 100%;
+    }
 
-.van img {
-    width: 100%;
-    display: block;
-}
+    .CarStrip img {
+        width: 100%;
+        display: block;
+    }
 
-.ThirdContainer {
-    display: flex;
-    flex-direction: row;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-left: 20%;
-    margin-right: 20%;
-    justify-content: center;
-    align-items: center;
-}
+    .van {
+        position: absolute;
+        top: -88%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
 
-.maColumn1, .maColumn2 {
-    display: flex;
-    justify-content: center;
-    padding: 5%;
-}
+    .van img {
+        width: 100%;
+        display: block;
+    }
 
-.maColumn1 {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
+    .ThirdContainer {
+        display: flex;
+        flex-direction: row;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-left: 20%;
+        margin-right: 20%;
+        justify-content: center;
+        align-items: center;
+    }
 
-.ForthContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 25px;
-    align-items: center;
-}
+    .maColumn1, .maColumn2 {
+        display: flex;
+        justify-content: center;
+        padding: 5%;
+    }
 
-.iconContainer {
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-}
+    .maColumn1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 
-.imgName {
-    padding: 5px;
-}
+    .ForthContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 25px;
+        align-items: center;
+    }
 
-.FifthContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    margin-top: 25px;
-    background: #e7e5d0;
-}
+    .iconContainer {
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
 
-.FifthContainer img {
-    width: 50%;
-}
+    .imgName {
+        padding: 5px;
+    }
 
-.FifthContainerBlurb {
-    display: flex;
-    flex-direction: column;
-    padding-left: 40px;
-    padding-right: 250px;
-    background-color: #e7e5d0;
-}
+    .imgLink a {
+        color: black;
+    }
 
-.FifthContainerBlurb p {
-    padding-bottom: 25px;
-}
+    .imgLink:hover {
+        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    }
 
-.FifthBlurbButtonContainer {
-    width: 100%;
-}
+    .imgLink a:active {
+        color: grey;
+    } 
 
-.FifthContainerBlurb button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    width: 55%;
-    text-wrap: nowrap;
+    .FifthContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin-top: 25px;
+        background: #e7e5d0;
+    }
+
+    .FifthContainer img {
+        width: 50%;
+    }
+
+    .FifthContainerBlurb {
+        display: flex;
+        flex-direction: column;
+        padding-left: 40px;
+        padding-right: 250px;
+        background-color: #e7e5d0;
+    }
+
+    .FifthContainerBlurb p {
+        padding-bottom: 25px;
+    }
+
+    .FifthBlurbButtonContainer {
+        width: 100%;
+    }
+
+    .FifthContainerBlurb button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        width: 55%;
+        text-wrap: nowrap;
+        }
+
+
+    .FifthContainerBlurb button:hover {
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+        background-color: #347536;
+        color: white;
+    }
+
+    .FifthContainerBlurb button:active {
+        top: 1px;
+        left: 2px;
+        box-shadow: none;
     }
 
     /** Home Page End **/
 
     /** Form Component Start **/
 
-.FormContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color:#f5f3e7;
-    padding: 25px 0px 25px 0px;
-}
+    .FormContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color:#f5f3e7;
+        padding: 25px 0px 25px 0px;
+    }
 
-.FormContainer2 {
-    width: 90%;
-    padding: 50px 0px 50px 0px;
-}
+    .FormContainer2 {
+        width: 90%;
+        padding: 50px 0px 50px 0px;
+    }
 
-.FormContainer h1{
-    padding-bottom: 20px;
-}
+    .FormContainer h1{
+        padding-bottom: 20px;
+    }
 
-.FormContainer p{
-    padding-bottom: 30px;
-}
+    .FormContainer p{
+        padding-bottom: 30px;
+    }
 
-.MainForm {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 12% 10px 12%;
-}
+    .MainForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 20% 10px 20%;
+    }
 
-.FormRow1 {
-    display: flex;
-    width: 100%;
-    padding-top: 5px;
-    padding-bottom: 30px;
-}
+    .FormRow1 {
+        display: flex;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 30px;
+    }
 
-.FormRow1 input {
-    padding: 15px;
-    background-color: white;
-    width: 49%;
-}
+    .FormRow1 input {
+        padding: 15px;
+        background-color: white;
+        width: 49%;
+    }
 
-#name, #Number {
-    margin-right: .5%;
-}
+    #name, #Number {
+        margin-right: .5%;
+    }
 
-#email, #type {
-    margin-left: .5%;
-}
+    #email, #type {
+        margin-left: .5%;
+    }
 
-.FormRow2 {
-    width: 100%;
-    background-color: white;
-    margin-top: 5px;
-    margin-bottom: 30px;
-}
+    .FormRow2 {
+        width: 100%;
+        background-color: white;
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
 
-.FormRow2 select {
-    padding: 15px;
-    width: 100%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: grey;
-}
+    .FormRow2 select {
+        padding: 15px;
+        width: 100%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: grey;
+    }
 
-.FormRow3 {
-    display: flex;
-    width: 100%;
-    padding-top: 5px;
-    padding-bottom: 30px;
-}
+    .FormRow3 {
+        display: flex;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 30px;
+    }
 
-.FormRow3 input {
-    padding: 15px;
-    background-color: white;
-    width: 48%;
-}
+    .FormRow3 input {
+        padding: 15px;
+        background-color: white;
+        width: 48%;
+    }
 
-.FormRow3 select {
-    padding: 15px;
-    background-color: white;
-    width: 50%;
-    color: grey;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+    .FormRow3 select {
+        padding: 15px;
+        background-color: white;
+        width: 50%;
+        color: grey;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 
-.FormRow4 {
-    width: 100%;
-    padding-bottom: 15px;
-    padding-top: 5px;
-    background-color: white;
-}
+    .FormRow4 {
+        width: 100%;
+        padding-bottom: 15px;
+        padding-top: 5px;
+        background-color: white;
+    }
 
-.FormRow4 textarea {
-    padding: 5px 0px 0px 2%;
-    width: 99%;
-    resize: none;
-}
+    .FormRow4 textarea {
+        padding: 5px 0px 0px 2%;
+        width: 99%;
+        resize: none;
+    }
 
-::placeholder {
-    color: grey;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+    ::placeholder {
+        color: grey;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 
-.FormRow5 {
-    width: 88%;
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-}
+    .FormRow5 {
+        width: 88%;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
 
-.FormRow5 button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
+    .FormRow5 input {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .FormRow5 input:hover {
+        background-color: #347536;
+        color: white;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .FormRow5 input:active {
+        box-shadow: none;
+    }
 
     /** Form Component End **/
 
     /** Footer Component Start **/
 
-.footerContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: #807c7b;
-    color: white;
-    padding: 25px;
-}
+    .footerContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #807c7b;
+        color: white;
+        padding: 25px;
+    }
 
-.footerContainer ul {
-    list-style: none;
-}
+    .footerContainer ul {
+        list-style: none;
+    }
 
-.SiteMap ul li a, .ContactUs p a {
-    text-decoration: none;
-    color: white;
-}
+    .SiteMap ul li a, .ContactUs p a {
+        color: white;
+    }
 
-.SiteMap ul li a:link {
-    color: white;
-}
+    .SiteMap a:hover {
+        color: black;
+        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    }
 
-.ServiceAreas ul, .SiteMap ul, .ContactUs p {
-    padding-left: 5px;
-    padding-top: 5px;
+    .SiteMap a:active {
+        color: rgb(65, 51, 51);
+    } 
 
-}
+
+    .ServiceAreas ul, .SiteMap ul, .ContactUs p {
+        padding-left: 5px;
+        padding-top: 5px;
+
+    }
 
     /** Footer Component End **/
 
     /** Alt-Page Hero Container Component Start **/
 
-.HeroContainer {
-    position: relative;
-    background-color: black;
-}
+    .HeroContainer {
+        position: relative;
+        background-color: black;
+    }
 
-.HeroContainerBlurb {
-    position: absolute;
-    top: 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    width: 100%;
-}
+    .HeroContainerBlurb {
+        position: absolute;
+        top: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        width: 100%;
+    }
 
-.HeroBGImage {
-    width: 100%;
-    display: block;
-    opacity: .5;
-    background-color: black;
-    filter: brightness(50%);
-}
+    .HeroBGImageMini {
+        height: 70vh;
+        background-image: url("assets/HomeInterior1.jpeg");
+        background-size: cover;
+        display: block;
+        opacity: .5;
+        background-color: black;
+        filter: brightness(50%);
+        background-position: center 45%;
+    }
 
-.HeroContainerBlurb-0 {
-    width: 60%;
-}
+    .HeroBGImageAC {
+        height: 70vh;
+        background-image: url("assets/HomeInterior2.webp");
+        background-size: cover;
+        display: block;
+        opacity: .5;
+        background-color: black;
+        filter: brightness(50%);
+        background-position: center 75%;
+    }
 
-.HeroContainerBlurb-0 h1{
-    width: 72%;
-}
+    .HeroBGImageHeating {
+        height: 70vh;
+        background-image: url("assets/HomeInterior3.jpeg");
+        background-size: cover;
+        display: block;
+        opacity: .5;
+        background-color: black;
+        filter: brightness(50%);
+        background-position: center 70%;
+    }
 
-.HeroContainerBlurb-1{
-    width: 60%;
-}
+    .HeroContainerBlurb-0 {
+        width: 60%;
+    }
 
-.HeroContainerBlurb-1 p{
-    width: 75%;
-    padding: 20px 20px 20px 0px;
-}
+    .HeroContainerBlurb-0 h1{
+        width: 72%;
+    }
 
-.HeroContainerBlurb-2{
-    width: 60%;
-}
+    .HeroContainerBlurb-1{
+        width: 60%;
+    }
+
+    .HeroContainerBlurb-1 p{
+        width: 75%;
+        padding: 20px 20px 20px 0px;
+    }
+
+    .HeroContainerBlurb-2{
+        width: 60%;
+    }
 
 
-.HeroHeadlineButton {
-    position: absolute;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
+    .HeroHeadlineButton {
+        position: absolute;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .HeroHeadlineButton:hover {
+            background-color: #347536;
+            color: white;
+            box-shadow: 0px 1px 2px #347536;
+    }
+
+    .HeroHeadlineButton:active {
+        box-shadow: none;
+    }
 
     /** Alt-Page Hero Container Component End**/
 
@@ -443,13 +538,37 @@ body p, body li, button, a{
         width: 100%;
     }
     
-    .Hero2BGImage {
-        width: 100%;
-        height: 80%;
+    .Hero2BGImageAbout {
+        height: 40vh;
+        background-image: url(assets/HomeInterior4.webp);
+        background-size: cover;
         display: block;
         opacity: .5;
         background-color: black;
         filter: brightness(50%);
+        background-position: center 65%;
+    }
+
+    .Hero2BGImageReview {
+        height: 40vh;
+        background-image: url(assets/HomeInterior5.webp);
+        background-size: cover;
+        display: block;
+        opacity: .5;
+        background-color: black;
+        filter: brightness(50%);
+        background-position: center 50%;
+    }
+
+    .Hero2BGImageRequest {
+        height: 40vh;
+        background-image: url(assets/HeatinHead2.jpeg);
+        background-size: cover;
+        display: block;
+        opacity: .5;
+        background-color: black;
+        filter: brightness(50%);
+        background-position: center 0%;
     }
     
     .HeroContainerBlurb2-0 {
@@ -502,6 +621,16 @@ body p, body li, button, a{
         width: 81%;
         padding-bottom: 25px;
     }
+    
+    .DescriptionContainerBlurb button:hover{
+        background-color: #347536;
+        color: white;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .DescriptionContainerBlurb button:active {
+        box-shadow: none;
+    }
 
     .ImageContainer {
         display: flex;
@@ -509,6 +638,8 @@ body p, body li, button, a{
         align-items: center;
         grid-column: 2 / span 1;
         grid-row: 1 / span 2;
+        height: 100%;
+        width: 100%;
     }
 
     .DescriptionContainer img {
@@ -619,6 +750,45 @@ body p, body li, button, a{
     }
     /** Review Page Ends **/
 
+    /** Thank You Page Starts **/
+    .TYContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .BGimg2 {
+        background-image: url(assets/1.jpeg);
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .TYTextContainer {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .TYTextContainer2 {
+        width: 50%;
+    }
+
+    .TYTextContainer2 h1 {
+        color: #4CAF50;
+        text-align: center;
+    }
+
+    .TYTextContainer2 p {
+        font-weight: bold;
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    /** Thank You Page Ends **/
+
     /** Media Queries Begin **/
     @media screen and (max-width: 1199.98px) {
 
@@ -631,7 +801,7 @@ body p, body li, button, a{
             font-size: 1.8rem;
         }
         
-        body p, body li, button, a{
+        body p, body li, button, a, input{
             font-size: .8rem;
         }
         /** Body Ends **/
@@ -639,7 +809,7 @@ body p, body li, button, a{
         /** Home Page Starts **/
 
         .headlineButton {
-            top: 47%;
+            top: 50%;
         }
 
         .ThirdContainer {
@@ -678,7 +848,7 @@ body p, body li, button, a{
             font-size: 1.7rem;
         }
         
-        body p, body li, button, a{
+        body p, body li, button, a, input{
             font-size: .7rem;
         }
         /** Body Ends **/
@@ -754,6 +924,10 @@ body p, body li, button, a{
 
         /** Home Page Starts **/
 
+        .BGimg {
+            height: 50vh;
+        }
+
         .headlineText {
             top: 15%;
         }
@@ -818,6 +992,10 @@ body p, body li, button, a{
 
         /** Alt-Page Hero Container Component Start **/
         
+        .HeroBGImageMini, .HeroBGImageAC, .HeroBGImageHeating {
+            height: 50vh;
+        }
+
         .HeroContainerBlurb {
             top: 12%;
         }
@@ -830,12 +1008,20 @@ body p, body li, button, a{
 
         /** Alt-Page Hero Container Component 2 Start **/
 
+        .Hero2BGImageAbout, .Hero2BGImageRequest, .Hero2BGImageReview {
+            height: 25vh;
+        }
+
         .HeroContainerBlurb2 {
-            top: 25%;
+            top: 15%;
         }
 
         .HeroContainerBlurb2-0, .HeroContainerBlurb2-2 {
             width: 80%;
+        }
+
+        .HeroContainerBlurb2-2 {
+            padding: 15px;
         }
         
         /** Alt-Page Hero Container Component 2 End **/
@@ -869,18 +1055,23 @@ body p, body li, button, a{
             font-size: 1.2rem;
         }
         
-        body p, body li, button, a{
+        body p, body li, button, a, input{
             font-size: .55rem;
         }
         /** Body Ends **/
 
         /** Home Starts **/
+
+        .BGimg {
+            height: 40vh;
+        }
+
         .FifthContainerBlurb {
             padding:10px 10px 10px 10px;
         }
 
         .FifthContainerBlurb button {
-            width: 80%;
+            width: 65%;
         }
 
         .FifthContainer img {
@@ -899,6 +1090,10 @@ body p, body li, button, a{
 
         /** Alt-Page Hero Container Component Start **/
 
+        .HeroBGImageMini, .HeroBGImageAC, .HeroBGImageHeating {
+            height: 30vh;
+        }
+
         .HeroContainerBlurb {
             top: 15%;
         }
@@ -916,10 +1111,25 @@ body p, body li, button, a{
             display: none;
         }
 
+        .DescriptionContainerBlurb button {
+            width: 26%;
+            transform: translate(58%, 0%);
+        }
+
         /** Alt-Page Hero Container Component End **/
 
+        /** Alt-Page Hero Container Component 2 Start **/
 
+        .Hero2BGImageAbout, .Hero2BGImageRequest, .Hero2BGImageReview {
+            height: 17vh;
+        }
 
+        .HeroContainerBlurb2 {
+            top: 25%;
+        }
+
+        /** Alt-Page Hero Container Component 2 End **/
+        
         /** Footer Starts **/
         .ServiceAreas h2, .SiteMap h2, .ContactUs h2 {
             font-size: 1rem;

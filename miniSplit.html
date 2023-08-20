@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +10,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="main.js"></script>
   </head>
+
   <body>
     <div class="navbar"> 
         <ul class="NavLinks">
@@ -36,7 +39,7 @@
     </div>
 
     <div class="HeroContainer">
-        <img src="assets/HeatinHead.jpeg" class="HeroBGImage">
+        <div class="HeroBGImageMini"></div>
         <div class="HeroContainerBlurb">
             <div class="HeroContainerBlurb-0">
                 <h1>
@@ -47,7 +50,7 @@
                 <p> Our expert, Wes, provides ductless mini split installs and repair services throughout the Springfield, Mo, metro area. </p>
             </div>
             <div class="HeroContainerBlurb-2">
-                <button class="HeroHeadlineButton">Request Service</button>
+              <a href="/RequestService.html"><button class="HeroHeadlineButton">Request Service</button></a>
             </div>
         </div>
     </div>
@@ -60,10 +63,10 @@
             <div class="DescriptionContainerMainContent">
               <p class="firstParagraph">Our professional crew is highly experienced in all types of mini-split heating and cooling units. So whether you want to have a ceiling or wall-mounted mini-split installed in your home or business, rest assured we have what it takes to get it running smoothly. If you ever need a mini-split repair, we can also assist with those services to get your system back to operating like new.</p>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus sint inventore vitae ratione, similique earum soluta minima tempore repellat distinctio veniam dolore voluptates. Voluptatum ullam, esse repellendus mollitia laborum sit?</p>
-              <button type="submit">Request Service</button>
+              <a href="/RequestService.html"><button type="submit">Request Service</button></a>
             </div>
             <div class="ImageContainer">
-              <img src="assets/stock hvac 1.webp">
+              <img src="assets/MiniSplit.jpeg">
             </div>
         </div>
     </div>
@@ -76,7 +79,7 @@
           To request information about our services,<br>
           fill out the form below or give us a call at 444-444-444!
         </p>
-        <form class="MainForm">
+        <form class="MainForm" method="POST" action="/ThankYou.html" target="_blank">
           <div class="FormRow1">
             <label for="Name"></label>
             <input type="text" id="name" name="name" placeholder="Full Name" required>
@@ -118,7 +121,7 @@
           </div>
 
           <div class="FormRow5">
-            <button type="submit" value="Submit">Send Message</button>
+            <input type="submit" value="Send Message">
           </div>
 
         </form>

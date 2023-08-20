@@ -36,7 +36,7 @@
     </div>
 
     <div class="HeroContainer">
-        <img src="assets/HeatinHead.jpeg" class="HeroBGImage">
+        <div class="HeroBGImageAC"> </div>
         <div class="HeroContainerBlurb">
             <div class="HeroContainerBlurb-0">
                 <h1>Air Conditioning Services</h1>
@@ -45,7 +45,7 @@
                 <p> Spingfield HVAC is your trusted home AC service provider in Springfield Missouri. SPFD HVAC offers home central air conditioning services including repair, replacement, and installation of new, energy-efficient products.</p>
             </div>
             <div class="HeroContainerBlurb-2">
-                <button class="HeroHeadlineButton">Request Service</button>
+              <a href="/RequestService.html"><button class="HeroHeadlineButton">Request Service</button></a>
             </div>
         </div>
     </div>
@@ -58,10 +58,10 @@
             <div class="DescriptionContainerMainContent">
               <p class="firstParagraph">Our factory-trained technicians have the expertise to install and service all air conditioning system makes and models. You can turn to us to repair your traditional split system, heat pump, or ductless mini-split. We’re also happy to be a go-to source for your central AC services.</p>
               <p>It’s important to keep your home as comfortable and energy efficient as possible, especially during the summer months. Luckily, our AC contractors are up-to-date on the latest technology to help you achieve maximum efficiency. We also specialize in retrofitting vintage and historical homes to bring them up to code while matching existing décor and architecture. No matter your needs, our residential AC services can help you achieve a comfortable temperature all year round.</p>
-              <button type="submit">Request Service</button>
+              <a href="/RequestService.html"><button type="submit">Request Service</button></a>
             </div>
             <div class="ImageContainer">
-              <img src="assets/stock hvac 1.webp">
+              <img src="assets/AirConditioner.jpeg">
             </div>
         </div>
     </div>
@@ -74,7 +74,7 @@
           To request information about our services,<br>
           fill out the form below or give us a call at 444-444-444!
         </p>
-        <form class="MainForm">
+        <form class="MainForm" method="POST" action="/ThankYou.html" target="_blank">
           <div class="FormRow1">
             <label for="Name"></label>
             <input type="text" id="name" name="name" placeholder="Full Name" required>
@@ -116,7 +116,7 @@
           </div>
 
           <div class="FormRow5">
-            <button type="submit" value="Submit">Send Message</button>
+            <input type="submit" value="Send Message">
           </div>
 
         </form>
