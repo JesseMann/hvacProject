@@ -144,8 +144,23 @@ body p, body li, button, a, input{
         position: absolute;
         top: -88%;
         left: 50%;
-        transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%);
+        animation: VanfadeIn 1.5s;
     }
+
+
+    @keyframes VanfadeIn {     
+        0% {
+            left: 48%;
+            }
+        100% {
+            left: 50%;
+            }
+
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
 
     .van img {
         width: 100%;
@@ -286,6 +301,10 @@ body p, body li, button, a, input{
     .FormContainer2 {
         width: 90%;
         padding: 50px 0px 50px 0px;
+    }
+
+    .InstantFadeIn {
+        animation: fadeIn 2.5s;
     }
 
     .FormContainer h1{
@@ -718,6 +737,7 @@ body p, body li, button, a, input{
     .MainContentContainer-1 {
         width: 35%;
         padding: 25px 0px 25px 0px;
+        animation: fadeIn 2.5s;
     }
     
     .MainContentContainer h2{
@@ -832,7 +852,6 @@ body p, body li, button, a, input{
         .ThirdContainer {
             margin-left: auto;
             margin-right: auto;
-            opacity: 0;
         }
 
         .FifthContainerBlurb {
@@ -1072,10 +1091,7 @@ body p, body li, button, a, input{
         body h2{
             font-size: 1.2rem;
         }
-        
-        body p, body li, button, a, input{
-            font-size: .55rem;
-        }
+
         /** Body Ends **/
 
         /** Home Starts **/
@@ -1085,14 +1101,14 @@ body p, body li, button, a, input{
         }
 
         .FifthContainerBlurb {
-            padding:10px 10px 10px 10px;
+            padding: 25px;
         }
 
         .FifthContainerBlurb button {
-            width: 65%;
+            width: 50%;
         }
-
         .FifthContainer img {
+            display: none;
             align-items: baseline;
         }
         /** Home Ends **/
