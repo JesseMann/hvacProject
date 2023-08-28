@@ -953,10 +953,6 @@ body p, body li, button, a, input{
             background-color: rgba(232,229,208,255);
         }
 
-        .NavLinks {
-            margin: 0px;
-        }
-
         /** NavBar Component End **/
 
         /** Home Page Starts **/
@@ -1090,6 +1086,10 @@ body p, body li, button, a, input{
         
         body h2{
             font-size: 1.2rem;
+        }
+
+        .NavLinks li a{
+            font-size: .6rem;
         }
 
         /** Body Ends **/
