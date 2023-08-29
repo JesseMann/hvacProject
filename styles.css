@@ -24,8 +24,9 @@ body h2{
     font-size: 2rem;
 }
 
-body p, body li, button, a, input{
+body p, body li, button, a, input, textarea, select{
     font-size: 1rem;
+    line-height: 1.6;
 }
 
     /** NavBar Component Start **/
@@ -182,6 +183,7 @@ body p, body li, button, a, input{
         display: flex;
         justify-content: center;
         padding: 5%;
+        animation: fadeIn 2s;
     }
 
     .maColumn1 {
@@ -196,19 +198,8 @@ body p, body li, button, a, input{
         justify-content: space-evenly;
         padding: 25px;
         align-items: center;
+        animation: fadeIn 2s;
     }
-
-    .fadeIn {
-        opacity: 0;
-    }
-    .fadeInTransition {
-        animation: fadeIn 2.5s;
-    }
-
-    @keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-      }
 
     .iconContainer {
         padding-left: 15px;
@@ -243,6 +234,7 @@ body p, body li, button, a, input{
 
     .FifthContainer img {
         width: 50%;
+        animation: fadeIn 2s;
     }
 
     .FifthContainerBlurb {
@@ -251,6 +243,7 @@ body p, body li, button, a, input{
         padding-left: 40px;
         padding-right: 250px;
         background-color: #e7e5d0;
+        animation: fadeIn 2s;
     }
 
     .FifthContainerBlurb p {
@@ -301,11 +294,13 @@ body p, body li, button, a, input{
     .FormContainer2 {
         width: 90%;
         padding: 50px 0px 50px 0px;
+        animation: fadeIn 2s;
     }
 
-    .InstantFadeIn {
-        animation: fadeIn 2.5s;
-    }
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
 
     .FormContainer h1{
         padding-bottom: 20px;
@@ -452,11 +447,15 @@ body p, body li, button, a, input{
         color: rgb(65, 51, 51);
     } 
 
+    .ServiceAreas h2, .SiteMap h2, .ContactUs h2 {
+        animation: fadeIn 2s;
+        margin-bottom: 10px;
+    }
 
     .ServiceAreas ul, .SiteMap ul, .ContactUs p {
         padding-left: 5px;
         padding-top: 5px;
-
+        animation: fadeIn 2s;
     }
 
     /** Footer Component End **/
@@ -655,6 +654,10 @@ body p, body li, button, a, input{
         padding-bottom: 25px;
     }
     
+    .DescriptionContainerBlurb {
+        animation: fadeIn 2s;
+    }
+
     .DescriptionContainerBlurb button:hover{
         background-color: #347536;
         color: white;
@@ -737,7 +740,7 @@ body p, body li, button, a, input{
     .MainContentContainer-1 {
         width: 35%;
         padding: 25px 0px 25px 0px;
-        animation: fadeIn 2.5s;
+        animation: fadeIn 2s;
     }
     
     .MainContentContainer h2{
@@ -838,7 +841,7 @@ body p, body li, button, a, input{
             font-size: 1.8rem;
         }
         
-        body p, body li, button, a, input{
+        body p, body li, button, a, input, textarea, select{
             font-size: .8rem;
         }
         /** Body Ends **/
@@ -885,9 +888,6 @@ body p, body li, button, a, input{
             font-size: 1.7rem;
         }
         
-        body p, body li, button, a, input{
-            font-size: .7rem;
-        }
         /** Body Ends **/
 
         /** Home Page Starts **/
@@ -1064,6 +1064,7 @@ body p, body li, button, a, input{
         .FormContainer2 {
             padding: 25px 0px 25px 0px;
         }
+
         /** Form Component Ends **/
 
 
@@ -1100,6 +1101,10 @@ body p, body li, button, a, input{
             height: 40vh;
         }
 
+        .ThirdContainer {
+            flex-direction: column;
+        }
+
         .FifthContainerBlurb {
             padding: 25px;
         }
@@ -1110,6 +1115,10 @@ body p, body li, button, a, input{
         .FifthContainer img {
             display: none;
             align-items: baseline;
+        }
+
+        .van {
+            animation: none;
         }
         /** Home Ends **/
 
@@ -1124,7 +1133,7 @@ body p, body li, button, a, input{
         /** Alt-Page Hero Container Component Start **/
 
         .HeroBGImageMini, .HeroBGImageAC, .HeroBGImageHeating {
-            height: 30vh;
+            height: 40vh;
         }
 
         .HeroContainerBlurb {
@@ -1145,8 +1154,8 @@ body p, body li, button, a, input{
         }
 
         .DescriptionContainerBlurb button {
-            width: 26%;
-            transform: translate(58%, 0%);
+            width: 35%;
+            transform: translate(42%, 0%);
         }
 
         /** Alt-Page Hero Container Component End **/
@@ -1154,7 +1163,7 @@ body p, body li, button, a, input{
         /** Alt-Page Hero Container Component 2 Start **/
 
         .Hero2BGImageAbout, .Hero2BGImageRequest, .Hero2BGImageReview {
-            height: 17vh;
+            height: 20vh;
         }
 
         .HeroContainerBlurb2 {
@@ -1162,6 +1171,11 @@ body p, body li, button, a, input{
         }
 
         /** Alt-Page Hero Container Component 2 End **/
+
+        /** Form Component Starts **/
+        .FormRow4 textarea {
+            padding: 5px 0px 0px 4%;
+        /** Form Component Ends **/
         
         /** Footer Starts **/
         .ServiceAreas h2, .SiteMap h2, .ContactUs h2 {
