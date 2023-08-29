@@ -143,7 +143,7 @@ body p, body li, button, a, input, textarea, select{
 
     .van {
         position: absolute;
-        top: -88%;
+        top: -85%;
         left: 50%;
         transform: translate(-50%, -50%);
         animation: VanfadeIn 1.5s;
