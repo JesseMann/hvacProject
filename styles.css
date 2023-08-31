@@ -38,6 +38,10 @@ body p, body li, button, a, input, textarea, select{
         z-index: 2;
     }
 
+    .fa.fa-bars.NavIcon {
+        display: none;
+    }
+
     .NavLinks {
         display: flex;
         flex-direction: row;
@@ -53,6 +57,7 @@ body p, body li, button, a, input, textarea, select{
         padding: 10px;
         width: 25%;
         text-align: center;
+        white-space: nowrap;
     }
 
     .NavLinks li a {
@@ -69,6 +74,15 @@ body p, body li, button, a, input, textarea, select{
         color: #807c7b;
         text-shadow: none;
     }
+
+    li#HVAC_Logo a img {
+        display: none;
+    }
+
+    li#HVAC_Logo a::after {
+        content: "Home";
+    }
+    
     /** NavBar Component End **/
 
     /** Home Page Start **/
@@ -952,7 +966,7 @@ body p, body li, button, a, input, textarea, select{
             width: 100%;
             background-color: rgba(232,229,208,255);
         }
-
+          
         /** NavBar Component End **/
 
         /** Home Page Starts **/
@@ -1079,6 +1093,57 @@ body p, body li, button, a, input, textarea, select{
 
     @media screen and (max-width: 575.98px) { 
 
+        /** NavBar Component Start **/
+        .NavLinks {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            text-decoration: none;
+            list-style-type: none;
+            align-items: normal;
+            margin-left: 0%;
+            margin-right: 0%;
+            margin-top: 0%;
+            animation: fadeIn 1s;
+        }
+
+        .NavLinks li {
+            width: 100%;
+            padding: 10px 0px 10px 0px;
+        }
+
+        .NavLinks li a {
+            display: block;
+            width: 100%;
+        }
+
+        .NavLinks li:hover{
+            background-color: #f5f3e7;
+        }
+
+        .NavIconContainer {
+            background-color: rgba(232,229,208,255);
+            padding-top: 12%;
+        }
+
+        .fa.fa-bars.NavIcon {
+            background: transparent;
+            display: block;
+            position: absolute;
+            right: 25px;
+            top: 10px;
+            z-index: 2;
+            font-size: 45px;
+            padding: 0px;
+            color: #4CAF50;
+          }
+
+        .fa.fa-bars.NavIcon:hover {
+            color: #347536;
+        }
+
+        /** NavBar Component End **/
+
         /** Body Starts **/
         body h1{
             font-size: 1.5rem;
@@ -1090,7 +1155,7 @@ body p, body li, button, a, input, textarea, select{
         }
 
         .NavLinks li a{
-            font-size: .6rem;
+            font-size: 1rem;
         }
 
         /** Body Ends **/
@@ -1175,6 +1240,7 @@ body p, body li, button, a, input, textarea, select{
         /** Form Component Starts **/
         .FormRow4 textarea {
             padding: 5px 0px 0px 4%;
+        }
         /** Form Component Ends **/
         
         /** Footer Starts **/
