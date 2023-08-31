@@ -47,7 +47,7 @@ body p, body li, button, a, input, textarea, select{
     }
 
     .NavLinks {
-        display: flex;
+        display: none;
         flex-direction: row;
         justify-content: center;
         text-decoration: none;
