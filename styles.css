@@ -799,7 +799,7 @@ body p, body li, button, a, input, textarea, select{
 
     /** Thank You Page Starts **/
 
-    #HVAC_Logo {
+    #TY_HVAC_Logo {
         background-color: rgba(232,229,208,255);
         padding: 10px 0px 0px 15px;
     }
@@ -816,7 +816,7 @@ body p, body li, button, a, input, textarea, select{
         position: relative;
         background-repeat: no-repeat;
         background-color: rgba(250, 245, 234, 1);
-        background-position: center bottom;
+        background-position: center top;
     }
 
     .TYTextContainer {
