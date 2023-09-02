@@ -47,21 +47,19 @@ body p, body li, button, a, input, textarea, select{
     }
 
     .NavLinks {
-        display: none;
+        display: flex;
         flex-direction: row;
         justify-content: center;
         text-decoration: none;
         list-style-type: none;
         align-items: center;
-        margin-left: 15%;
-        margin-right: 15%;
+        padding: 0px 25px 0px 25px;
     }
 
     .NavLinks li {
         padding: 10px;
         width: 25%;
         text-align: center;
-        white-space: nowrap;
     }
 
     .NavLinks li a {
@@ -1104,7 +1102,7 @@ body p, body li, button, a, input, textarea, select{
         }
 
         .NavLinks {
-            display: flex;
+            display: none;
             flex-direction: column;
             justify-content: left;
             text-decoration: none;
@@ -1114,6 +1112,7 @@ body p, body li, button, a, input, textarea, select{
             margin-right: 0%;
             margin-top: 0%;
             animation: fadeIn 1s;
+            
         }
 
         .NavLinks li {
