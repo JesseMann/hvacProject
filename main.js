@@ -7,3 +7,6 @@ function myFunction() {
     }
   }
   
+  function ThankYouPageLink() {
+    window.location.href="https://jessemann.github.io/hvacProject/ThankYou.html";
+  }
