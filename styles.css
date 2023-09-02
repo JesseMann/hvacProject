@@ -443,16 +443,16 @@ body p, body li, button, a, input, textarea, select{
     }
 
     .SiteMap ul li a, .ContactUs p a {
-        color: black;
+        color: white;
     }
 
     .ContactUs p a:hover {
-        color: white;
+        color: black;
         text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
     }
 
     .SiteMap a:hover {
-        color: white;
+        color: black;
         text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
     }
 
@@ -801,11 +801,6 @@ body p, body li, button, a, input, textarea, select{
 
     /** Thank You Page Starts **/
 
-    #TY_HVAC_Logo {
-        background-color: rgba(232,229,208,255);
-        padding: 10px 0px 0px 15px;
-    }
-
     .TYContainer {
         display: flex;
         flex-direction: row;
@@ -830,7 +825,7 @@ body p, body li, button, a, input, textarea, select{
     }
 
     .TYTextContainer2 {
-        width: 50%;
+        width: 60%;
     }
 
     .TYTextContainer2 h1 {
@@ -840,9 +835,7 @@ body p, body li, button, a, input, textarea, select{
 
     .TYTextContainer2 p {
         font-weight: bold;
-        padding-top: 40px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding: 25px;
     }
 
     /** Thank You Page Ends **/
@@ -891,7 +884,6 @@ body p, body li, button, a, input, textarea, select{
             padding: initial;
         }
         /** Form Component Ends **/
-
     }
 
     @media screen and (max-width: 991.98px) {
@@ -959,6 +951,15 @@ body p, body li, button, a, input, textarea, select{
             width: 50%;
         }
         /** About Page Ends **/
+
+    
+        /** Thank You Page Start **/
+
+        .TYTextContainer2 {
+            width: 75%;
+        }
+    
+        /** Thank You Page Ends **/
     }
 
     @media screen and (max-width: 767.98px) { 
@@ -1182,7 +1183,15 @@ body p, body li, button, a, input, textarea, select{
         /** Home Starts **/
 
         .BGimg {
-            height: 40vh;
+            height: 50vh;
+        }
+
+        .maColumn1 {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .maColumn2 {
+            padding:0px;
         }
 
         .ThirdContainer {
@@ -1260,13 +1269,27 @@ body p, body li, button, a, input, textarea, select{
         .FormRow4 textarea {
             padding: 5px 0px 0px 4%;
         }
+
+
         /** Form Component Ends **/
         
         /** Footer Starts **/
-        .ServiceAreas h2, .SiteMap h2, .ContactUs h2 {
-            font-size: 1rem;
+
+        .SiteMap {
+            display: none;
         }
+
         /** Footer Ends **/
+
+            
+        /** Thank You Page Start **/
+
+        .TYTextContainer2 {
+            width: 100%;
+        }
+    
+        /** Thank You Page Ends **/
+
      }
     
 
