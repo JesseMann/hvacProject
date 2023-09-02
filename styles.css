@@ -336,15 +336,15 @@ body p, body li, button, a, input, textarea, select{
     .FormRow1 input {
         padding: 15px;
         background-color: white;
-        width: 49%;
+        width: 50%;
     }
 
     #name, #Number {
-        margin-right: .5%;
+        margin-right: 5px;
     }
 
     #email, #type {
-        margin-left: .5%;
+        margin-left: 5px;
     }
 
     .FormRow2 {
@@ -369,9 +369,13 @@ body p, body li, button, a, input, textarea, select{
     }
 
     .FormRow3 input {
-        padding: 15px;
+        padding: 15px 0px 15px 0px;
         background-color: white;
-        width: 48%;
+        width: 50%;
+    }
+
+    .FormRow3 input::placeholder {
+        padding-left: 15px;
     }
 
     .FormRow3 select {
@@ -390,9 +394,12 @@ body p, body li, button, a, input, textarea, select{
     }
 
     .FormRow4 textarea {
-        padding: 5px 0px 0px 2%;
-        width: 99%;
+        width: 100%;
         resize: none;
+    }
+
+    .FormRow4 textarea::placeholder {
+        padding: 15px;
     }
 
     ::placeholder {
