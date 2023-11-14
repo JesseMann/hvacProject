@@ -441,7 +441,7 @@ body p, body li, button, a, input, textarea, select{
         flex-direction: row;
         justify-content: space-evenly;
         background-color: #807c7b;
-        color: white;
+        color: black;
         padding: 25px;
     }
 
@@ -450,16 +450,16 @@ body p, body li, button, a, input, textarea, select{
     }
 
     .SiteMap ul li a, .ContactUs p a {
-        color: white;
+        color: black;
     }
 
     .ContactUs p a:hover {
-        color: black;
+        color: white;
         text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
     }
 
     .SiteMap a:hover {
-        color: black;
+        color: white;
         text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
     }
 
@@ -1182,7 +1182,7 @@ body p, body li, button, a, input, textarea, select{
         /** Home Starts **/
 
         .BGimg {
-            height: 50vh;
+            height: 35vh;
         }
 
         .maColumn1 {
@@ -1292,4 +1292,20 @@ body p, body li, button, a, input, textarea, select{
      }
     
 
+     @media screen and (max-height: 499px) and (min-width: 575px) {
+
+        .BGimg {
+            height: 95vh;
+        }
+      
+        .HeroBGImageMini, .HeroBGImageAC, .HeroBGImageHeating {
+            height: 95vh;
+        }
+
+        .Hero2BGImageAbout, .Hero2BGImageReview, .Hero2BGImageRequest{
+            height: 55vh;
+        }
+        
+
+    }
     /** Media Queries Ends **/
