@@ -1,2 +1,2 @@
 # hvacProject
-HVAC Website for a friend's boutique business.
+HVAC Website for an independently run business.
