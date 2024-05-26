@@ -842,6 +842,10 @@ body p, body li, button, a, input, textarea, select{
 
     .TYTextContainer2 {
         width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
     .TYTextContainer2 h1 {
