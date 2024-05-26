@@ -323,6 +323,10 @@ body p, body li, button, a, input, textarea, select{
         display: inline-block;
     }
 
+    .Forms__FormsViralityContainer-sc-11vy283-0 {
+        display: none;
+    }
+
     .MainForm {
         display: flex;
         flex-direction: column;
@@ -964,6 +968,13 @@ body p, body li, button, a, input, textarea, select{
         }
         /** About Page Ends **/
 
+        /** Form Component Starts **/
+
+        .hsFORM {
+            width: initial!important;
+            display: initial!important;
+        }
+        /** Form Component Ends **/
     
         /** Thank You Page Start **/
 
