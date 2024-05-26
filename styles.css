@@ -318,6 +318,11 @@ body p, body li, button, a, input, textarea, select{
         padding-bottom: 30px;
     }
 
+    .hsFORM {
+        width: 50%;
+        display: inline-block;
+    }
+
     .MainForm {
         display: flex;
         flex-direction: column;
