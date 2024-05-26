@@ -1,2 +1,6 @@
 # hvacProject
-HVAC Website for a friend's boutique business.
+HVAC Website for an independently run business.
+
+Made with vanilla HTML, CSS, and Javascript. 
+
+https://jessemann.github.io/hvacProject/
