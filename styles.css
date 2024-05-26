@@ -971,7 +971,6 @@ body p, body li, button, a, input, textarea, select{
         /** Form Component Starts **/
 
         .hsFORM {
-            width: initial!important;
             display: initial!important;
         }
         /** Form Component Ends **/
