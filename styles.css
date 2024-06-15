@@ -248,18 +248,17 @@ body p, body li, button, a, input, textarea, select{
     .FifthContainerBlurb {
         display: flex;
         flex-direction: column;
-        padding-left: 40px;
-        padding-right: 250px;
         background-color: #e7e5d0;
         animation: fadeIn 2s;
     }
 
     .FifthContainerBlurb p {
-        padding-bottom: 25px;
+        padding: 25px;
     }
 
     .FifthBlurbButtonContainer {
         width: 100%;
+        padding-left: 25px;
     }
 
     .FifthContainerBlurb button {
@@ -319,7 +318,7 @@ body p, body li, button, a, input, textarea, select{
     }
 
     .hsFORM {
-        width: 52%;
+        width: 100%;
         display: inline-block;
     }
 
@@ -539,24 +538,24 @@ body p, body li, button, a, input, textarea, select{
     }
 
     .HeroContainerBlurb-0 {
-        width: 60%;
+        width: 80%;
     }
 
     .HeroContainerBlurb-0 h1{
-        width: 72%;
+        width: 80%;
     }
 
     .HeroContainerBlurb-1{
-        width: 60%;
+        width: 80%;
     }
 
     .HeroContainerBlurb-1 p{
-        width: 75%;
+        width: 100%;
         padding: 20px 20px 20px 0px;
     }
 
     .HeroContainerBlurb-2{
-        width: 60%;
+        width: 80%;
     }
 
 
@@ -599,7 +598,7 @@ body p, body li, button, a, input, textarea, select{
     }
     
     .Hero2BGImageAbout {
-        height: 40vh;
+        height: 70vh;
         background-image: url(assets/HomeInterior4.webp);
         background-size: cover;
         display: block;
@@ -610,7 +609,7 @@ body p, body li, button, a, input, textarea, select{
     }
 
     .Hero2BGImageReview {
-        height: 40vh;
+        height: 70vh;
         background-image: url(assets/HomeInterior5.webp);
         background-size: cover;
         display: block;
@@ -621,7 +620,7 @@ body p, body li, button, a, input, textarea, select{
     }
 
     .Hero2BGImageRequest {
-        height: 40vh;
+        height: 70vh;
         background-image: url(assets/HeatinHead2.jpeg);
         background-size: cover;
         display: block;
@@ -632,26 +631,26 @@ body p, body li, button, a, input, textarea, select{
     }
     
     .HeroContainerBlurb2-0 {
-        width: 60%;
+        width: 80%;
     }
     
     .HeroContainerBlurb2-0 h1{
-        width: 72%;
+        width: 80%;
         white-space: nowrap;
     }
     
     .HeroContainerBlurb2-1{
-        width: 60%;
+        width: 80%;
     }
     
     .HeroContainerBlurb2-1 p{
-        width: 75%;
+        width: 80%;
         padding: 20px 20px 20px 0px;
     }
     
     .HeroContainerBlurb2-2{
         padding: 25px;
-        width: 60%;
+        width: 80%;
     }
     
     
@@ -713,14 +712,11 @@ body p, body li, button, a, input, textarea, select{
     .DescriptionContainerBlurb {
         display: grid;
         background-color: #e7e5d0;
-        grid-template-rows: 50px 1fr;
         grid-template-columns: 2fr 2fr;
         grid-row-gap: 25px;
     }
 
     .DescriptionContainerBlurb h2 {
-        grid-column: 1;
-        transform: translate(15%, 0%);
         width: 81%;
         padding-top: 25px;
     }
@@ -766,7 +762,7 @@ body p, body li, button, a, input, textarea, select{
     }
     
     .MainContentContainer-1 {
-        width: 35%;
+        width: 85%;
         padding: 25px 0px 25px 0px;
         animation: fadeIn 2s;
     }
@@ -891,11 +887,10 @@ body p, body li, button, a, input, textarea, select{
         .FifthContainerBlurb {
             display: flex;
             flex-direction: column;
-            padding-right: 150px;
         }
 
         .FifthContainerBlurb button {
-            width: 65%;
+            width: 30%;
         }
         /** Home Page Ends **/
 
@@ -934,41 +929,47 @@ body p, body li, button, a, input, textarea, select{
             padding: 0px 20px 0px 20px;
         }
 
+        .FifthContainer img {
+            display: none;
+        }
+
         /** Home Page Ends **/
 
         /** Alt-Page Description Container Component Start**/
 
         .ImageContainer {
-            grid-row: inherit;
-            align-items: baseline;
+            display: none;
         }
 
-        .DescriptionContainerBlurb h2 {
-            width: 100%;
-            padding: 0px;
-            transform: translate(60%, 25%);
+        .DescriptionContainer {
+            padding-top: 50px;
         }
 
-        .firstParagraph {
-            padding: 0px;
+        .DescriptionContainerBlurb {
+            grid-template-columns: none;
         }
+
+        .DescriptionContainerBlurb p, .DescriptionContainerBlurb ul, .DescriptionContainerBlurb h2 {
+            margin-left: 7%;
+            margin-right: 7%;
+        }
+
 
         .DescriptionContainerMainContent {
-            padding-bottom: 10px;
+            transform: none;
+            width: 100%;
+            padding-bottom: 50px;
         }
 
         .DescriptionContainerBlurb button {
-            width: 45%;
-        }
-
-        .DescriptionContainerBlurb ul {
-            padding: 0px 0px 25px 10px;
+            width: 23%;
+            transform: translate(30%, 0%);
         }
         /** Alt-Page Description Container Component End**/
 
         /** About Page Begins **/
         .MainContentContainer-1 {
-            width: 50%;
+            width: 80%;
         }
         /** About Page Ends **/
 
@@ -1013,10 +1014,6 @@ body p, body li, button, a, input, textarea, select{
             top: 30%;
         }
 
-        .headlineButton {
-            top: 50%;
-        }
-
         .ForthContainer {
             display: none;
         }
@@ -1025,53 +1022,23 @@ body p, body li, button, a, input, textarea, select{
             padding: 0px 20px 0px 20px;
         }
 
-        /** Home Page Ends **/
-
-        /** Alt-Page Description Container Component Start**/
-
-        .ImageContainer {
+        .FifthContainer img {
             display: none;
         }
 
-        .DescriptionContainer {
-            padding-top: 50px;
+        .FifthContainerBlurb button {
+            width: 30%;
         }
 
-        .DescriptionContainerBlurb {
-            grid-template-columns: none;
-            grid-template-rows: none;
-        }
+        /** Home Page Ends **/
 
-        .DescriptionContainerBlurb p, .DescriptionContainerBlurb ul {
-            margin-left: 15%;
-            margin-right: 15%;
-        }
-        .DescriptionContainerBlurb h2 {
-            transform: none;
-            width: 100%;
-            white-space: nowrap;
-            display: flex;
-            justify-content: center;
-        }
-
-
-        .DescriptionContainerMainContent {
-            transform: none;
-            width: 100%;
-            padding-bottom: 50px;
-        }
-
-        .DescriptionContainerBlurb button {
-            width: 22%;
-            transform: translate(68%, 0%);
-        }
         /** Alt-Page Description Container Component End**/
 
 
         /** Alt-Page Hero Container Component Start **/
         
         .HeroBGImageMini, .HeroBGImageAC, .HeroBGImageHeating {
-            height: 50vh;
+            height: 35vh;
         }
 
         .HeroContainerBlurb {
@@ -1082,12 +1049,20 @@ body p, body li, button, a, input, textarea, select{
             width: 80%;
         }
 
+        .HeroContainerBlurb-1 {
+            display: none;
+        }
+
+        .HeroContainerBlurb-2 {
+            padding-top: 20px;
+        }
+
         /** Alt-Page Hero Container Component Start **/
 
         /** Alt-Page Hero Container Component 2 Start **/
 
         .Hero2BGImageAbout, .Hero2BGImageRequest, .Hero2BGImageReview {
-            height: 25vh;
+            height: 35vh;
         }
 
         .HeroContainerBlurb2 {
@@ -1212,6 +1187,10 @@ body p, body li, button, a, input, textarea, select{
             padding:0px;
         }
 
+        .headlineButton {
+            display: none;
+        }
+
         .ThirdContainer {
             flex-direction: column;
         }
@@ -1223,6 +1202,7 @@ body p, body li, button, a, input, textarea, select{
         .FifthContainerBlurb button {
             width: 50%;
         }
+
         .FifthContainer img {
             display: none;
             align-items: baseline;
@@ -1236,16 +1216,12 @@ body p, body li, button, a, input, textarea, select{
         /** About Page Start **/
         
         .MainContentContainer-1 {
-            width: 75%;
+            width: 85%;
         }
 
         /** About Page End **/
 
         /** Alt-Page Hero Container Component Start **/
-
-        .HeroBGImageMini, .HeroBGImageAC, .HeroBGImageHeating {
-            height: 40vh;
-        }
 
         .HeroContainerBlurb {
             top: 15%;
@@ -1265,8 +1241,8 @@ body p, body li, button, a, input, textarea, select{
         }
 
         .DescriptionContainerBlurb button {
-            width: 35%;
-            transform: translate(42%, 0%);
+            width: 45%;
+            transform: translate(15%, 0%);
         }
 
         /** Alt-Page Hero Container Component End **/
@@ -1274,7 +1250,7 @@ body p, body li, button, a, input, textarea, select{
         /** Alt-Page Hero Container Component 2 Start **/
 
         .Hero2BGImageAbout, .Hero2BGImageRequest, .Hero2BGImageReview {
-            height: 20vh;
+            height: 30vh;
         }
 
         .HeroContainerBlurb2 {
@@ -1316,13 +1292,9 @@ body p, body li, button, a, input, textarea, select{
         .BGimg {
             height: 95vh;
         }
-      
-        .HeroBGImageMini, .HeroBGImageAC, .HeroBGImageHeating {
-            height: 95vh;
-        }
 
         .Hero2BGImageAbout, .Hero2BGImageReview, .Hero2BGImageRequest{
-            height: 55vh;
+            height: 35vh;
         }
         
 
