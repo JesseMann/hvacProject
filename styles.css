@@ -1038,7 +1038,7 @@ body p, body li, button, a, input, textarea, select{
         /** Alt-Page Hero Container Component Start **/
         
         .HeroBGImageMini, .HeroBGImageAC, .HeroBGImageHeating {
-            height: 35vh;
+            height: 30vh;
         }
 
         .HeroContainerBlurb {
@@ -1187,10 +1187,6 @@ body p, body li, button, a, input, textarea, select{
             padding:0px;
         }
 
-        .headlineButton {
-            display: none;
-        }
-
         .ThirdContainer {
             flex-direction: column;
         }
@@ -1234,10 +1230,6 @@ body p, body li, button, a, input, textarea, select{
 
         .HeroContainerBlurb-1 p {
             padding: 10px 0px 0px 0px;
-        }
-
-        .HeroHeadlineButton {
-            display: none;
         }
 
         .DescriptionContainerBlurb button {
@@ -1287,7 +1279,7 @@ body p, body li, button, a, input, textarea, select{
      }
     
 
-     @media screen and (max-height: 499px) and (min-width: 575px) {
+     @media screen and (max-height: 499px) and (max-width: 575px) {
 
         .BGimg {
             height: 95vh;
@@ -1297,6 +1289,9 @@ body p, body li, button, a, input, textarea, select{
             height: 35vh;
         }
         
+        .HeroHeadlineButton {
+            display: none;
+        }
 
     }
     /** Media Queries Ends **/
