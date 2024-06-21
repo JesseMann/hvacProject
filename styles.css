@@ -16,16 +16,16 @@ body {
 }
 
 body h1{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 
 
 body h2{
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 body p, body li, button, a, input, textarea, select{
-    font-size: 1rem;
+    font-size: .8rem;
     line-height: 1.6;
 }
 
@@ -114,7 +114,7 @@ body p, body li, button, a, input, textarea, select{
 
     .headlineButton {
         position: absolute;
-        top: 50%;
+        top: 52%;
         left: 50%;
         transform: translate(-50%, -50%);
         padding: 10px 20px;
@@ -124,6 +124,7 @@ body p, body li, button, a, input, textarea, select{
         cursor: pointer;
         z-index: 1;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+        font-size: 1rem;
     }
 
     .headlineButton:hover {
@@ -219,15 +220,15 @@ body p, body li, button, a, input, textarea, select{
         padding: 5px;
     }
 
-    .imgLink a {
+    .imgName a {
         color: black;
     }
 
-    .imgLink:hover {
+    .imgName a:hover {
         text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
     }
 
-    .imgLink a:active {
+    .imgName a:active {
         color: grey;
     } 
 
@@ -318,7 +319,7 @@ body p, body li, button, a, input, textarea, select{
     }
 
     .hsFORM {
-        width: 100%;
+        width: 60%;
         display: inline-block;
     }
 
@@ -538,7 +539,8 @@ body p, body li, button, a, input, textarea, select{
     }
 
     .HeroContainerBlurb-0 {
-        width: 80%;
+        width: 60%;
+        transform: translate(-23%, 0%);
     }
 
     .HeroContainerBlurb-0 h1{
@@ -546,7 +548,8 @@ body p, body li, button, a, input, textarea, select{
     }
 
     .HeroContainerBlurb-1{
-        width: 80%;
+        width: 60%;
+        transform: translate(-23%, 0%);
     }
 
     .HeroContainerBlurb-1 p{
@@ -555,7 +558,15 @@ body p, body li, button, a, input, textarea, select{
     }
 
     .HeroContainerBlurb-2{
+        width: 60%;
+        transform: translate(-23%, 0%);
+    }
+
+    .HeroContainerBlurb-1-Special {
+        padding: 25px;
         width: 80%;
+        transform: translate(11%, 0%);
+        text-wrap: balance;
     }
 
 
@@ -632,6 +643,7 @@ body p, body li, button, a, input, textarea, select{
     
     .HeroContainerBlurb2-0 {
         width: 80%;
+        transform: translate(11.5%, 0%);
     }
     
     .HeroContainerBlurb2-0 h1{
@@ -646,11 +658,13 @@ body p, body li, button, a, input, textarea, select{
     .HeroContainerBlurb2-1 p{
         width: 80%;
         padding: 20px 20px 20px 0px;
+        transform: translate(11.5%, 0%);
     }
     
     .HeroContainerBlurb2-2{
         padding: 25px;
         width: 80%;
+        transform: translate(11%, 0%);
     }
     
     
@@ -718,7 +732,8 @@ body p, body li, button, a, input, textarea, select{
 
     .DescriptionContainerBlurb h2 {
         width: 81%;
-        padding-top: 25px;
+        padding-top: 15px;
+        padding-bottom: 10px;
     }
 
     .DescriptionContainerBlurb ul {
@@ -730,11 +745,11 @@ body p, body li, button, a, input, textarea, select{
     }
 
     .firstParagraph {
-        padding-top: 25px;
+        display: none;
     }
 
     .DescriptionContainerBlurb p {
-        padding-bottom: 25px;
+        padding-bottom: 15px;
     }
 
     .DescriptionContainerBlurb button {
@@ -762,7 +777,7 @@ body p, body li, button, a, input, textarea, select{
     }
     
     .MainContentContainer-1 {
-        width: 85%;
+        width: 60%;
         padding: 25px 0px 25px 0px;
         animation: fadeIn 2s;
     }
@@ -879,25 +894,100 @@ body p, body li, button, a, input, textarea, select{
             top: 50%;
         }
 
-        .ThirdContainer {
-            margin-left: auto;
-            margin-right: auto;
+        .maColumn1, .maColumn2 {
+            padding: 3.5%;
         }
 
+        .ThirdContainer {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+            
         .FifthContainerBlurb {
             display: flex;
             flex-direction: column;
+            padding: 0px 0px 25px 0px;
+            margin-left: 10%;
+            margin-right: 10%;
         }
 
         .FifthContainerBlurb button {
-            width: 30%;
+            width: 22.5%;
+        }
+
+        .FifthContainer img {
+            display: none;
         }
         /** Home Page Ends **/
+
+        /** Alt-Page Hero Container Component Start **/
+
+        .HeroContainerBlurb-0, .HeroContainerBlurb-1, .HeroContainerBlurb-2{
+            width: 72%;
+            transform: none;
+        }
+
+        .HeroContainerBlurb2-0 {
+            width: 80%;
+
+        }
+        
+        .HeroContainerBlurb2-0 h1{
+            width: 80%;
+            white-space: nowrap;
+        }
+        
+        .HeroContainerBlurb2-1{
+            width: 80%;
+        }
+
+        /** Alt-Page Hero Container Component Start **/
+
+        /** Alt-Page Description Container Component Start**/
+
+        .ImageContainer {
+            display: none;
+        }
+
+        .DescriptionContainerMainContent {
+            transform: none;
+            width: 100%;
+            padding-bottom: 50px;
+        }
+
+        .DescriptionContainerBlurb p, .DescriptionContainerBlurb ul, .DescriptionContainerBlurb h2 {
+            margin-left: 14%;
+            margin-right: 14%;
+        }
+
+        .firstParagraph {
+            display: inherit;
+        }
+
+        .DescriptionContainer {
+            padding-top: 25px;
+        }
+
+        .DescriptionContainerBlurb {
+            grid-template-columns: none;
+        }
+
+        .DescriptionContainerBlurb button {
+            width: 14%;
+            transform: translate(100%, 0%);
+        }
+        
+        /** Alt-Page Description Container Component End**/
 
         /** Form Component Starts **/
         .MainForm {
             padding: initial;
         }
+
+        .hsFORM {
+            width: 85%;
+        }
+
         /** Form Component Ends **/
     }
 
@@ -925,53 +1015,67 @@ body p, body li, button, a, input, textarea, select{
             top: 52%;
         }
 
-        .FifthContainerBlurb {
-            padding: 0px 20px 0px 20px;
+        .ThirdContainer {
+            margin-left: 2%;
+            margin-right: 2%;
         }
 
-        .FifthContainer img {
-            display: none;
+        .FifthContainerBlurb {
+            margin-left: 2%;
+            margin-right: 2%;
         }
 
         /** Home Page Ends **/
 
-        /** Alt-Page Description Container Component Start**/
+        /** Alt-Page Hero Container Component Start **/
 
-        .ImageContainer {
-            display: none;
-        }
-
-        .DescriptionContainer {
-            padding-top: 50px;
-        }
-
-        .DescriptionContainerBlurb {
-            grid-template-columns: none;
-        }
-
-        .DescriptionContainerBlurb p, .DescriptionContainerBlurb ul, .DescriptionContainerBlurb h2 {
-            margin-left: 7%;
-            margin-right: 7%;
-        }
-
-
-        .DescriptionContainerMainContent {
+        .HeroContainerBlurb-0, .HeroContainerBlurb-1, .HeroContainerBlurb-2{
+            width: 87%;
             transform: none;
-            width: 100%;
-            padding-bottom: 50px;
         }
 
-        .DescriptionContainerBlurb button {
-            width: 23%;
-            transform: translate(30%, 0%);
+        /** Alt-Page Hero Container Component Start **/
+
+        /** Alt-Page Hero Container Component 2 Start **/
+        
+        .HeroContainerBlurb2-0 {
+            width: 100%;
+            transform: translate(9%, 0%);
         }
-        /** Alt-Page Description Container Component End**/
+        
+        .HeroContainerBlurb2-2{
+            padding: 25px;
+            width: 100%;
+            transform: translate(9%, 0%);
+        }
+        
+        .HeroContainerBlurb-1-Special {
+            padding: 25px;
+            width: 100%;
+            transform: translate(9%, 0%);
+        }
+
+        /** Alt-Page Hero Container Component 2 End **/
 
         /** About Page Begins **/
         .MainContentContainer-1 {
             width: 80%;
         }
         /** About Page Ends **/
+
+        /** Alt-Page Description Container Component Start**/
+
+        .DescriptionContainerBlurb p, .DescriptionContainerBlurb ul, .DescriptionContainerBlurb h2 {
+            margin-left: 7%;
+            margin-right: 7%;
+        }
+
+        .DescriptionContainerBlurb button {
+            width: 20%;
+            transform: translate(35%, 0%)
+        }
+
+        /** Alt-Page Description Container Component End**/
 
         /** Form Component Starts **/
 
@@ -1018,8 +1122,8 @@ body p, body li, button, a, input, textarea, select{
             display: none;
         }
 
-        .FifthContainerBlurb {
-            padding: 0px 20px 0px 20px;
+        .headlineButton {
+          font-size: .8rem;
         }
 
         .FifthContainer img {
@@ -1046,7 +1150,7 @@ body p, body li, button, a, input, textarea, select{
         }
 
         .HeroContainerBlurb-0, .HeroContainerBlurb-1, .HeroContainerBlurb-2{
-            width: 80%;
+            width: 86%;
         }
 
         .HeroContainerBlurb-1 {
@@ -1073,12 +1177,35 @@ body p, body li, button, a, input, textarea, select{
             width: 80%;
         }
 
-        .HeroContainerBlurb2-2 {
+        .HeroContainerBlurb2-0 {
+            width: 100%;
+            transform: translate(9%, 0%);
+        }
+
+        .HeroContainerBlurb2-2{
             padding: 15px;
+            width: 100%;
+            transform: translate(9%, 0%);
+        }
+    
+        .HeroContainerBlurb-1-Special {
+            padding: 25px;
+            width: 100%;
+            transform: translate(9%, 0%);
         }
         
         /** Alt-Page Hero Container Component 2 End **/
 
+        
+
+        /** Alt-Page Description Container Component Start**/
+
+        .DescriptionContainerBlurb button {
+            width: 24%;
+            transform: translate(29%, 0%)
+        }
+
+        /** Alt-Page Description Container Component End**/
 
         /** Form Component Starts **/
         .FormContainer2 {
@@ -1189,10 +1316,12 @@ body p, body li, button, a, input, textarea, select{
 
         .ThirdContainer {
             flex-direction: column;
+            margin: 0px;
         }
 
         .FifthContainerBlurb {
-            padding: 25px;
+            padding-bottom: 25px;
+            margin: 0px;
         }
 
         .FifthContainerBlurb button {
@@ -1249,7 +1378,29 @@ body p, body li, button, a, input, textarea, select{
             top: 25%;
         }
 
+        .HeroContainerBlurb2-0 {
+            transform: translate(6%, 0%);
+        }
+
+        .HeroContainerBlurb2-2{
+            transform: translate(6%, 0%);
+        }
+    
+        .HeroContainerBlurb-1-Special {
+            transform: translate(6%, 0%);
+        }
+
         /** Alt-Page Hero Container Component 2 End **/
+
+
+        /** Alt-Page Description Container Component Start**/
+
+        .DescriptionContainerBlurb button {
+            width: 39%;
+            transform: translate(18%, 0%)
+        }
+
+        /** Alt-Page Description Container Component End**/
 
         /** Form Component Starts **/
         .FormRow4 textarea {
